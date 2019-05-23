@@ -1,0 +1,21 @@
+@import "./fonts";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: $montserrat;
+}
+.main {
+  height: 100vh;
+  background-color: #000;
+  background-image: url("../../src/img/img3.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+}
