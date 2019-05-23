@@ -15,7 +15,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("./*.html", ["reload"]);
-  gulp.watch("./src/js/**/*.js", ["reload"]);
+  gulp.watch("./src/js/*.js", ["reload"]);
 });
 
 gulp.task("sass", function() {
