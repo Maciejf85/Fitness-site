@@ -26,7 +26,7 @@ gulp.task("sass", function() {
       .pipe(
         sass({
           errLogToConsole: true,
-          outputStyle: "compressed" //nested, expanded, compact, compressed.
+          outputStyle: "nested" //nested, expanded, compact, compressed.
         })
       )
       // .pipe(sourcemaps.write())

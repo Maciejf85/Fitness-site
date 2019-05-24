@@ -1,4 +1,6 @@
 @import "./fonts";
+@import "./variables";
+@import "./mixins";
 
 * {
   box-sizing: border-box;
@@ -6,9 +8,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-a {
-  color: inherit;
-  text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+h1 {
+  font-size: 15rem;
+}
+h2 {
+  font-size: 4rem;
 }
 html {
   font-size: 62.5%;
@@ -16,7 +28,10 @@ html {
 body {
   position: relative;
   font-family: $montserrat;
-  background-color: #121315;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 .container {
   max-width: 1360px;
@@ -30,18 +45,22 @@ body {
   background-size: cover;
   text-transform: uppercase;
 }
-.nav {
-  width: 100%;
-  height: 50px;
-  color: white;
-  // background: orange;
-  padding: 0 30px;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
 
+.nav {
+  background-color: #121315;
+  width: 100%;
+  &__container {
+    max-width: 1360px;
+    height: 50px;
+    margin: 0 auto;
+    color: white;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
   &__logo {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-family: $exo;
     font-style: italic;
     flex-grow: 3;
@@ -49,37 +68,69 @@ body {
     letter-spacing: 3px;
   }
   &__items {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     flex-grow: 7;
-    color: white;
+    color: $color-primary;
     ul {
       display: flex;
       list-style: none;
       justify-content: space-around;
       font-weight: 700;
+    }
+    li {
+      padding: 10px;
+    }
 
-      li:hover {
-        color: orangered;
-      }
+    li:hover {
+      position: relative;
+      color: white;
     }
   }
 }
+
 .active {
   position: relative;
-  margin: 10px 0;
-  color: orangered;
-  padding-bottom: 5px;
-  border-bottom: 1px solid cornflowerblue;
+  color: $color-primary;
+  color: white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 2px;
+    background: white;
+    display: block;
+  }
 }
 .main__text {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 9.8rem;
+  transform: translate(-50%, -100%);
   color: white;
   letter-spacing: 4px;
   font-family: $exo;
   font-style: italic;
   font-weight: bold;
+}
+.section {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    @include underline($color-primary);
+
+    p {
+      margin: 30px 0;
+      font-size: 1.2rem;
+    }
+  }
 }
