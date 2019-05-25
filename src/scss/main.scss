@@ -20,7 +20,7 @@ h1 {
   font-size: 15rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3.7rem;
 }
 html {
   font-size: 62.5%;
@@ -38,6 +38,7 @@ a {
   margin: 0 auto;
 }
 .main {
+  position: relative;
   height: calc(100vh - 50px);
   background-image: url("../../src/img/img3.jpg");
   background-position: center 0;
@@ -66,6 +67,9 @@ a {
     flex-grow: 3;
     font-weight: 700;
     letter-spacing: 3px;
+    span {
+      color: $color-primary;
+    }
   }
   &__items {
     font-size: 1.2rem;
@@ -110,7 +114,7 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -50%);
   color: white;
   letter-spacing: 4px;
   font-family: $exo;
@@ -121,6 +125,7 @@ a {
   margin-top: 100px;
   margin-bottom: 50px;
   text-align: center;
+  // border: 1px solid red;
   &__title {
     position: relative;
     text-transform: uppercase;
@@ -131,6 +136,78 @@ a {
     p {
       margin: 30px 0;
       font-size: 1.2rem;
+    }
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    // border: 1px solid green;
+  }
+  .element {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    min-height: 200px;
+    margin: 50px 0;
+    // align-items: center;
+    // border: 1px solid black;
+
+    &__img {
+      flex-grow: 4;
+      // border: 1px solid orange;
+      padding: 10px;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+    }
+    &__desc {
+      text-align: left;
+      flex-grow: 6;
+      padding: 10px;
+      font-family: $open-sans;
+      // border: 1px solid yellowgreen;
+      &__header {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin: 5px 0;
+        text-transform: capitalize;
+      }
+      &__title {
+        font-family: $exo;
+        font-size: 3.6rem;
+        color: $color-primary;
+        font-weight: 700;
+        margin: 5px 0;
+        font-style: italic;
+        text-transform: capitalize;
+      }
+      &__article {
+        font-size: 1.6rem;
+        margin: 20px 0;
+        color: $color-light-grey;
+      }
+      &__link {
+        align-items: center;
+        font-family: $exo;
+        font-size: 1.6rem;
+        margin: 10px 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        i {
+          color: $color-primary;
+          padding: 0 10px;
+          font-size: 1.5rem;
+        }
+        &:hover {
+          color: $color-primary;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+      }
     }
   }
 }

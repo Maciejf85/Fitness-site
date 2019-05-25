@@ -11,3 +11,9 @@
     background: $color;
   }
 }
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
