@@ -1,6 +1,8 @@
 @import "./fonts";
 @import "./variables";
 @import "./mixins";
+@import "./workouts";
+@import "./transformation";
 
 * {
   box-sizing: border-box;
@@ -17,7 +19,7 @@ h6 {
   text-align: center;
 }
 h1 {
-  font-size: 15rem;
+  font-size: 13rem;
 }
 h2 {
   font-size: 3.7rem;
@@ -34,7 +36,7 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 1360px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .main {
@@ -46,7 +48,31 @@ a {
   background-size: cover;
   text-transform: uppercase;
 }
-
+.top-button {
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: $color-primary;
+  z-index: 9999;
+  transition: 0.3s;
+  display: none;
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  &:hover {
+    cursor: pointer;
+    background: #000;
+  }
+}
 .nav {
   background-color: #121315;
   width: 100%;
@@ -120,94 +146,4 @@ a {
   font-family: $exo;
   font-style: italic;
   font-weight: bold;
-}
-.section {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  text-align: center;
-  // border: 1px solid red;
-  &__title {
-    position: relative;
-    text-transform: uppercase;
-    font-style: italic;
-    letter-spacing: 2px;
-    @include underline($color-primary);
-
-    p {
-      margin: 30px 0;
-      font-size: 1.2rem;
-    }
-  }
-
-  &__items {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    // border: 1px solid green;
-  }
-  .element {
-    display: flex;
-    width: 50%;
-    padding: 10px;
-    min-height: 200px;
-    margin: 50px 0;
-    // align-items: center;
-    // border: 1px solid black;
-
-    &__img {
-      flex-grow: 4;
-      // border: 1px solid orange;
-      padding: 10px;
-      img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-      }
-    }
-    &__desc {
-      text-align: left;
-      flex-grow: 6;
-      padding: 10px;
-      font-family: $open-sans;
-      // border: 1px solid yellowgreen;
-      &__header {
-        font-size: 1.6rem;
-        font-weight: 700;
-        margin: 5px 0;
-        text-transform: capitalize;
-      }
-      &__title {
-        font-family: $exo;
-        font-size: 3.6rem;
-        color: $color-primary;
-        font-weight: 700;
-        margin: 5px 0;
-        font-style: italic;
-        text-transform: capitalize;
-      }
-      &__article {
-        font-size: 1.6rem;
-        margin: 20px 0;
-        color: $color-light-grey;
-      }
-      &__link {
-        align-items: center;
-        font-family: $exo;
-        font-size: 1.6rem;
-        margin: 10px 0;
-        font-weight: 700;
-        text-transform: uppercase;
-        i {
-          color: $color-primary;
-          padding: 0 10px;
-          font-size: 1.5rem;
-        }
-        &:hover {
-          color: $color-primary;
-          cursor: pointer;
-          transition: 0.3s;
-        }
-      }
-    }
-  }
 }
