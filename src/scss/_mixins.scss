@@ -17,3 +17,21 @@
     @content;
   }
 }
+
+@mixin title {
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2px;
+    @include underline($color-primary);
+
+    p {
+      text-transform: none;
+      margin: 30px 0;
+      font-size: 1.75rem;
+      font-family: $open-sans;
+    }
+  }
+}
