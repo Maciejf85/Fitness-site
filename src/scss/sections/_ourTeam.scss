@@ -1,0 +1,59 @@
+.ourTeam {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  //   border: 1px solid red;
+  @include section_title;
+
+  &__elements {
+    display: flex;
+    justify-content: space-around;
+
+    .item {
+      width: 30%;
+      padding: 20px 0;
+      //   border: 1px solid red;
+
+      &__img {
+        width: 100%;
+        overflow: hidden;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        img {
+          height: 100%;
+        }
+      }
+      &__name {
+        padding: 10px 0;
+        h2 {
+          font-family: $exo;
+          color: $color-primary;
+        }
+      }
+      &__social {
+        p {
+          font-family: $open-sans;
+          font-size: 1.6rem;
+          color: $color-light-grey;
+          padding: 15px 0;
+        }
+
+        &__icons {
+          display: flex;
+          justify-content: center;
+          i {
+            font-size: 1.8rem;
+            color: $color-light-grey;
+            margin: 0 15px;
+            transition: 0.3s;
+            &:hover {
+              cursor: pointer;
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

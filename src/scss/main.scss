@@ -1,10 +1,12 @@
 @import "./fonts";
 @import "./mixins";
 @import "./variables";
-@import "./workouts";
-@import "./transformation";
-@import "./schedule";
-@import "./joinUs";
+@import "./buttons";
+@import "./sections/workouts";
+@import "./sections/transformation";
+@import "./sections/schedule";
+@import "./sections/joinUs";
+@import "./sections/ourTeam";
 
 * {
   box-sizing: border-box;
