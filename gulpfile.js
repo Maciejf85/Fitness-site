@@ -3,7 +3,8 @@ var sass = require("gulp-sass");
 var browserSync = require("browser-sync");
 // var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require("gulp-autoprefixer");
-var uglify = require("gulp-uglify");
+// let rename = require("gulp-rename");
+let uglify = require("gulp-uglify-es").default;
 
 gulp.task("reload", function() {
   browserSync.reload();
@@ -40,21 +41,24 @@ gulp.task("sass", function() {
   );
 });
 
-gulp.task("js", function() {
-  return gulp
-    .src("./src/js/**/*.js")
-    .pipe(uglify())
-    .pipe(gulp.dest("dist/js"));
-});
-
-// minifikacja javascript ===> gulp js
-
 gulp.task("watch", ["sass", "serve"], function() {
   gulp.watch("src/scss/**/*.scss", ["sass"]);
 });
 
+// minifikacja javascript ===> gulp js
+
+gulp.task("uglify", function() {
+  return (
+    gulp
+      .src("./src/js/**/*.js")
+      // .pipe(rename("bundle.min.js"))
+      .pipe(uglify(/* options */))
+      .pipe(gulp.dest("dist/js/"))
+  );
+});
+
 // 1. npm init -y
-// 2. npm i -D gulp gulp-sass browser-sync gulp-sourcemaps gulp-autoprefixer gulp-uglify
+// 2. npm i -D gulp gulp-sass browser-sync gulp-sourcemaps gulp-autoprefixer gulp-uglify-es
 
 // 3. gulp watch
 // 4. gulp js
