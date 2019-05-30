@@ -441,7 +441,10 @@ section.joinUs {
       width: 24%;
       padding: 55px 0 15px 0;
       margin: 35px 0 100px 0;
-      border: 3px solid #ab363e; }
+      border: 3px solid #ab363e;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
       .priceList .price .item:hover {
         background: #ab363e;
         cursor: pointer; }
@@ -467,13 +470,74 @@ section.joinUs {
 
 .footer__top {
   background: #272527;
-  padding-top: 55px; }
+  padding: 35px 0; }
+  .footer__top .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .footer__top .item {
+    width: 25%;
+    padding: 10px; }
+    .footer__top .item__title h2 {
+      font-weight: 700;
+      font-style: italic;
+      font-family: "Exo 2", sans-serif;
+      font-size: 1.8rem;
+      color: #fe625b;
+      text-align: left;
+      position: relative;
+      padding: 30px 0;
+      text-transform: uppercase; }
+      .footer__top .item__title h2::after {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        width: 30px;
+        height: 2px;
+        background: #fe625b;
+        display: block; }
+    .footer__top .item__desc {
+      color: #949494;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.6rem;
+      padding: 10px 0;
+      margin-top: 10px; }
+      .footer__top .item__desc .navigation {
+        list-style: none;
+        padding: 0;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 400;
+        font-size: 1.5rem;
+        font-style: italic; }
+        .footer__top .item__desc .navigation li {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          padding: 3px 0; }
+          .footer__top .item__desc .navigation li:hover {
+            color: #fe625b; }
+      .footer__top .item__desc p {
+        line-height: 2.2rem; }
+      .footer__top .item__desc .mail {
+        display: block;
+        color: #fe625b;
+        margin: 15px 0; }
+      .footer__top .item__desc .hours {
+        list-style: none;
+        padding: 0; }
+        .footer__top .item__desc .hours li {
+          padding: 5px 0; }
 
 .footer__bottom {
   background: #000;
   color: #949494;
   padding: 20px 0;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 700; }
   .footer__bottom span {
