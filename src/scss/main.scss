@@ -7,12 +7,14 @@
 @import "./sections/schedule";
 @import "./sections/joinUs";
 @import "./sections/ourTeam";
+@import "./sections/priceList";
+@import "./sections/footer";
 
 * {
   box-sizing: border-box;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 h1,
 h2,

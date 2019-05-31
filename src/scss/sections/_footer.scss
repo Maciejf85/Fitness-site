@@ -1,0 +1,87 @@
+.footer {
+  &__top {
+    background: $color-dark-grey;
+    padding: 35px 0;
+    .container {
+      display: flex;
+      justify-content: space-around;
+    }
+    .item {
+      width: 25%;
+      //   border: 1px solid red;
+      padding: 10px;
+      &__title {
+        h2 {
+          font-weight: 700;
+          font-style: italic;
+          font-family: $exo;
+          font-size: 1.8rem;
+          color: $color-primary;
+          text-align: left;
+          position: relative;
+          padding: 30px 0;
+          text-transform: uppercase;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 5px;
+            width: 30px;
+            height: 2px;
+            background: $color-primary;
+            display: block;
+          }
+        }
+      }
+      &__desc {
+        color: $color-light-grey;
+        font-family: $open-sans;
+        font-size: 1.6rem;
+        padding: 10px 0;
+        margin-top: 10px;
+
+        .navigation {
+          list-style: none;
+          padding: 0;
+          text-transform: uppercase;
+          color: white;
+          font-weight: 400;
+          font-size: 1.5rem;
+          font-style: italic;
+          li {
+            transition: 0.3s;
+            padding: 3px 0;
+            &:hover {
+              color: $color-primary;
+            }
+          }
+        }
+        p {
+          line-height: 2.2rem;
+        }
+        .mail {
+          display: block;
+          color: $color-primary;
+          margin: 15px 0;
+        }
+        .hours {
+          list-style: none;
+          padding: 0;
+          li {
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    background: #000;
+    color: $color-light-grey;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    span {
+      color: $color-primary;
+    }
+  }
+}
