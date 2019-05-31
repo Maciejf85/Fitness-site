@@ -12,12 +12,6 @@
   }
 }
 
-@mixin desktop {
-  @media (min-width: #{$desktop}) {
-    @content;
-  }
-}
-
 @mixin section_title {
   &__title {
     position: relative;
@@ -33,5 +27,15 @@
       font-size: 1.75rem;
       font-family: $open-sans;
     }
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
   }
 }
