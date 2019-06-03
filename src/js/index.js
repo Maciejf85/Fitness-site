@@ -1,16 +1,4 @@
-const navList = [...document.querySelectorAll(".nav__list li a")];
 const topButton = document.querySelector(".top-button");
-
-const clearClass = () => {
-  navList.forEach(item => item.classList.remove("active"));
-};
-
-navList.forEach(item => {
-  item.addEventListener("click", e => {
-    clearClass();
-    e.target.classList.toggle("active");
-  });
-});
 let h = window.innerHeight;
 
 const position = window.addEventListener("scroll", () => {

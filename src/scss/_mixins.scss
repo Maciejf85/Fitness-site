@@ -9,6 +9,9 @@
     height: 2px;
     width: 150px;
     background: $color;
+    @include mobile {
+      width: 120px;
+    }
   }
 }
 
@@ -26,16 +29,20 @@
       margin: 30px 0;
       font-size: 1.75rem;
       font-family: $open-sans;
+      @include mobile {
+        padding: 0 30px;
+      }
     }
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
   }
 }
 @mixin tablet {
   @media (max-width: #{$desktop}) {
-    @content;
-  }
-}
-@mixin mobile {
-  @media (max-width: #{$mobile}) {
     @content;
   }
 }

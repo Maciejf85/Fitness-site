@@ -5,6 +5,12 @@ section.transformation {
   background-size: cover;
   margin-top: 100px;
   margin-bottom: 50px;
+  @include tablet {
+  }
+  @include mobile {
+    background-image: none;
+    background: #000;
+  }
 }
 .transformation {
   display: flex;
@@ -18,11 +24,24 @@ section.transformation {
     margin-right: 15%;
     width: 43%;
     padding: 30px;
+    @include tablet {
+    }
+    @include mobile {
+      margin: 0 auto;
+      width: 100vw;
+      min-height: 100vh;
+      padding: 30px;
+    }
     // border: 1px solid white;
     &__header {
       font-family: $open-sans;
       font-size: 1.6rem;
       padding: 0 15px;
+      @include tablet {
+      }
+      @include mobile {
+        font-size: 1.3rem;
+      }
     }
     &__title {
       font-size: 4rem;
@@ -32,6 +51,11 @@ section.transformation {
       letter-spacing: 2px;
       font-style: italic;
       padding: 0 15px;
+      @include tablet {
+      }
+      @include mobile {
+        font-size: 3rem;
+      }
     }
     &__article {
       display: flex;
