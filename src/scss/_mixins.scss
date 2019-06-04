@@ -42,7 +42,20 @@
   }
 }
 @mixin tablet {
-  @media (max-width: #{$desktop}) {
+  @media (min-width: #{$mobile + 1}) and (max-width: #{$tablet - 1px}) {
     @content;
   }
 }
+@mixin desktop {
+  @media (min-width: #{$tablet + 1}) and (max-width: #{$desktop }) {
+    @content;
+  }
+}
+
+// $desktop: 1240px;
+// $tablet: 960px;
+// $mobile: 640px;
+
+// 0px <-------> 640px mobile
+// 640px <-------> 1240px tablet
+// 1240px --------> ... desktop

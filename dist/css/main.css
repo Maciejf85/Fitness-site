@@ -75,7 +75,7 @@ button {
         padding: 0 30px;
         margin-top: 50px;
         margin-bottom: 25px; } }
-    @media (max-width: 1240px) {
+    @media (min-width: 641px) and (max-width: 959px) {
       .workouts__items {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -94,18 +94,14 @@ button {
     width: 50%;
     padding: 10px;
     min-height: 200px;
-    margin: 50px 0;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    margin: 50px 0; }
     @media (max-width: 640px) {
       .workouts .element {
         width: 100%;
         text-align: center;
         min-height: 100px;
-        margin: 20px 0; } }
-    @media (max-width: 1240px) {
+        margin: 20px; } }
+    @media (min-width: 641px) and (max-width: 959px) {
       .workouts .element {
         width: 100%;
         text-align: center;
@@ -120,9 +116,12 @@ button {
       @media (max-width: 640px) {
         .workouts .element__img {
           display: none; } }
+      @media (min-width: 641px) and (max-width: 959px) {
+        .workouts .element__img {
+          display: none; } }
       .workouts .element__img img {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
         -webkit-border-radius: 50%;
                 border-radius: 50%; }
     .workouts .element__desc {
@@ -184,6 +183,10 @@ section.transformation {
     section.transformation {
       background-image: none;
       background: #000; } }
+  @media (min-width: 641px) and (max-width: 959px) {
+    section.transformation {
+      background-image: none;
+      background: #000; } }
 
 .transformation {
   display: -webkit-box;
@@ -205,13 +208,22 @@ section.transformation {
   .transformation .element {
     min-height: 300px;
     margin-right: 15%;
-    width: 43%;
+    width: 50%;
     padding: 30px; }
+    @media (min-width: 961px) and (max-width: 1240px) {
+      .transformation .element {
+        width: 70vw;
+        margin-right: 0; } }
+    @media (min-width: 641px) and (max-width: 959px) {
+      .transformation .element {
+        margin: 0 auto;
+        width: 100vw;
+        padding: 30px;
+        margin-right: 10%; } }
     @media (max-width: 640px) {
       .transformation .element {
         margin: 0 auto;
         width: 100vw;
-        min-height: 100vh;
         padding: 30px; } }
     .transformation .element__header {
       font-family: "Open Sans", sans-serif;
@@ -244,7 +256,8 @@ section.transformation {
       .transformation .element__article .item {
         width: 50%;
         font-style: italic;
-        margin: 10px 0; }
+        margin: 10px 0;
+        padding: 0 20px; }
         .transformation .element__article .item h2 {
           font-family: "Exo 2", sans-serif;
           display: inline-block;
@@ -303,13 +316,24 @@ section.transformation {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
+    @media (max-width: 640px) {
+      .schedule__elements {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .schedule__elements .item {
       width: 32%; }
+      @media (max-width: 640px) {
+        .schedule__elements .item {
+          width: 90vw;
+          margin: 0 auto; } }
       .schedule__elements .item__img {
-        overflow: hidden;
-        height: 238px; }
+        overflow: hidden; }
         .schedule__elements .item__img img {
-          width: 100%; }
+          width: 100%;
+          min-width: 250px; }
       .schedule__elements .item__date {
         font-size: "Open Sans", sans-serif;
         color: #949494;
@@ -330,6 +354,9 @@ section.transformation {
           font-family: "Open Sans", sans-serif;
           font-size: 1.6rem;
           color: #949494; }
+          @media (max-width: 640px) {
+            .schedule__elements .item__desc p {
+              margin: 20px auto 70px auto; } }
 
 section.joinUs {
   min-height: 700px;
