@@ -26,9 +26,10 @@
       //   border: 1px solid black;
 
       &__img {
+        text-align: center;
         overflow: hidden;
         img {
-          width: 100%;
+          width: 80%;
           min-width: 250px;
         }
       }
@@ -37,6 +38,7 @@
         color: $color-light-grey;
         font-size: 1.6rem;
         padding: 10px 0;
+        text-align: center;
         i {
           padding: 0 5px;
         }

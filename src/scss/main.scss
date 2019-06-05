@@ -57,7 +57,7 @@ a {
   background-size: cover;
   text-transform: uppercase;
   @include mobile {
-    width: 100vw;
+    width: 100%;
   }
 }
 .top-button {
@@ -115,6 +115,9 @@ a {
     font-size: 1.2rem;
     flex-grow: 7;
     color: $color-primary;
+    @include mobile {
+      display: none;
+    }
     ul {
       display: flex;
       list-style: none;

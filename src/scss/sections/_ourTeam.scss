@@ -2,8 +2,10 @@
   margin-top: 100px;
   margin-bottom: 50px;
   text-align: center;
-  border: 1px solid red;
   @include section_title;
+  @include tablet {
+    margin-bottom: 0;
+  }
 
   &__elements {
     display: flex;
@@ -11,6 +13,7 @@
     flex-wrap: wrap;
     @include tablet {
       max-width: 100%;
+      padding-bottom: 0;
     }
 
     .item {
@@ -19,7 +22,9 @@
       @include mobile {
         width: 100%;
       }
-      border: 1px solid red;
+      @include tablet {
+        max-height: 440px;
+      }
 
       &__img {
         width: 100%;
@@ -27,9 +32,6 @@
         @include tablet {
           height: 45%;
         }
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
 
         img {
           height: 100%;
