@@ -23,6 +23,14 @@
     text-align: center;
     letter-spacing: 2px;
     @include underline($color-primary);
+    @include tablet {
+      padding: 0 50px;
+    }
+    @include mobile {
+      h2 {
+        line-height: 5.2rem;
+      }
+    }
 
     p {
       text-transform: none;

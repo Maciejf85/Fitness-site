@@ -8,11 +8,11 @@ section.transformation {
 
   @include mobile {
     background-image: none;
-    background: #000;
+    background: $color-dark-grey;
   }
   @include tablet {
     background-image: none;
-    background: #000;
+    background: $color-dark-grey;
   }
 }
 .transformation {
@@ -49,7 +49,7 @@ section.transformation {
       padding: 0 15px;
 
       @include mobile {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
       }
     }
     &__title {
@@ -61,7 +61,7 @@ section.transformation {
       font-style: italic;
       padding: 0 15px;
       @include mobile {
-        font-size: 3rem;
+        font-size: 3.2rem;
       }
     }
     &__article {
@@ -77,6 +77,9 @@ section.transformation {
         margin: 10px 0;
         padding: 0 20px;
         // border: 1px solid yellow;
+        @include mobile {
+          width: 100%;
+        }
         h2 {
           font-family: $exo;
           display: inline-block;

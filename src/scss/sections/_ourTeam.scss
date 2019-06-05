@@ -2,24 +2,35 @@
   margin-top: 100px;
   margin-bottom: 50px;
   text-align: center;
-  //   border: 1px solid red;
+  border: 1px solid red;
   @include section_title;
 
   &__elements {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    @include tablet {
+      max-width: 100%;
+    }
 
     .item {
       width: 30%;
       padding: 20px 0;
-      //   border: 1px solid red;
+      @include mobile {
+        width: 100%;
+      }
+      border: 1px solid red;
 
       &__img {
         width: 100%;
         overflow: hidden;
+        @include tablet {
+          height: 45%;
+        }
         // display: flex;
         // justify-content: center;
         // align-items: center;
+
         img {
           height: 100%;
         }
@@ -29,6 +40,9 @@
         h2 {
           font-family: $exo;
           color: $color-primary;
+          @include tablet {
+            font-size: 3rem;
+          }
         }
       }
       &__social {
