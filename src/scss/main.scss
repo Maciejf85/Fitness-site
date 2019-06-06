@@ -58,6 +58,7 @@ a {
   text-transform: uppercase;
   @include mobile {
     width: 100%;
+    top: 50px;
   }
 }
 .top-button {
@@ -90,6 +91,13 @@ a {
   background-color: #121315;
   width: 100%;
 
+  @include mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
   &__container {
     max-width: 1360px;
     height: 50px;
@@ -100,6 +108,7 @@ a {
     align-items: center;
     text-transform: uppercase;
   }
+
   &__logo {
     font-size: 3rem;
     font-family: $exo;
@@ -107,6 +116,7 @@ a {
     flex-grow: 3;
     font-weight: 700;
     letter-spacing: 3px;
+
     span {
       color: $color-primary;
     }
@@ -116,18 +126,39 @@ a {
     flex-grow: 7;
     color: $color-primary;
     @include mobile {
-      display: none;
+      position: absolute;
+      right: 5%;
     }
     ul {
       display: flex;
       list-style: none;
       justify-content: space-around;
       font-weight: 700;
-    }
-    li {
-      padding: 10px;
-    }
+      @include mobile {
+        display: none;
+      }
 
+      li {
+        padding: 10px;
+      }
+      &.mobile_menu {
+        width: 150vw;
+        height: 150vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.959);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation-name: showUp;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        border-radius: 50%;
+      }
+    }
     li:hover {
       position: relative;
       color: white;
@@ -163,4 +194,28 @@ a {
   font-family: $exo;
   font-style: italic;
   font-weight: bold;
+}
+.hamburger {
+  width: 40px;
+  height: 40px;
+  display: none;
+
+  @include mobile {
+    display: block;
+    fill: white;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@keyframes showUp {
+  0% {
+    transform: translatex(-1000px) scale(0.3);
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }

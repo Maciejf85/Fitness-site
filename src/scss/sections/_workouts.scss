@@ -16,10 +16,6 @@
       margin-top: 50px;
       margin-bottom: 25px;
     }
-    @include tablet {
-      flex-direction: column;
-      align-items: center;
-    }
 
     // border: 1px solid green;
   }
@@ -29,36 +25,39 @@
     padding: 10px;
     min-height: 200px;
     margin: 50px 0;
-    // align-items: center;
     // border: 1px solid black;
     @include mobile {
+      flex-direction: column;
       width: 100%;
       text-align: center;
       min-height: 100px;
       margin: 20px;
     }
     @include tablet {
+      // flex-direction: column;
       width: 100%;
       text-align: center;
       min-height: 100px;
       margin: 20px 0;
     }
+
     // border: 1px solid black;
 
     &__img {
       @include mobile {
-        display: none;
-      }
-      @include tablet {
-        display: none;
+        // display: none;
       }
       flex-grow: 4;
-      // border: 1px solid orange;
+      width: 100%;
       padding: 10px;
       img {
         width: 180px;
         height: 180px;
         border-radius: 50%;
+        @include mobile {
+          width: 150px;
+          height: 150px;
+        }
       }
     }
     &__desc {

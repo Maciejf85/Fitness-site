@@ -1,6 +1,11 @@
 const topButton = document.querySelector(".top-button");
+const menuButton = document.querySelector(".hamburger");
+const navList = document.querySelector(".nav__list");
 let h = window.innerHeight;
 
+menuButton.addEventListener("click", function() {
+  navList.classList.toggle("mobile_menu");
+});
 const position = window.addEventListener("scroll", () => {
   h = window.innerHeight;
   window.pageYOffset > h
@@ -12,7 +17,6 @@ const scrollToTop = () => {
   const c = document.documentElement.scrollTop;
   if (c > 0) {
     let value = 16;
-    c > 30 ? (value = 16) : (value = 32);
     window.requestAnimationFrame(scrollToTop);
     window.scrollTo(0, c - c / value);
   }

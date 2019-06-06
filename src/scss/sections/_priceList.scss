@@ -9,6 +9,10 @@
   @include tablet {
     margin-top: 0;
   }
+  @include mobile {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
   .price {
     display: flex;
