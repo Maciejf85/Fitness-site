@@ -9,6 +9,9 @@
     height: 2px;
     width: 150px;
     background: $color;
+    @include mobile {
+      width: 120px;
+    }
   }
 }
 
@@ -20,22 +23,47 @@
     text-align: center;
     letter-spacing: 2px;
     @include underline($color-primary);
+    @include tablet {
+      padding: 0 50px;
+    }
+    @include mobile {
+      h2 {
+        line-height: 5.2rem;
+      }
+    }
 
     p {
       text-transform: none;
       margin: 30px 0;
       font-size: 1.75rem;
       font-family: $open-sans;
+      @include mobile {
+        padding: 0 30px;
+      }
     }
   }
 }
-@mixin tablet {
-  @media (max-width: #{$desktop}) {
-    @content;
-  }
-}
+
 @mixin mobile {
   @media (max-width: #{$mobile}) {
     @content;
   }
 }
+@mixin tablet {
+  @media (min-width: #{$mobile + 1}) and (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$tablet + 1}) and (max-width: #{$desktop }) {
+    @content;
+  }
+}
+
+// $desktop: 1240px;
+// $tablet: 960px;
+// $mobile: 640px;
+
+// 0px <-------> 640px mobile
+// 640px <-------> 1240px tablet
+// 1240px --------> ... desktop

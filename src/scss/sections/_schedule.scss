@@ -7,16 +7,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    @include mobile {
+      flex-direction: column;
+    }
+    // @include tablet {
+    //   width: 100%;
+    //   text-align: center;
+    //   min-height: 100px;
+    //   margin: 20px 0;
+    // }
 
     .item {
       width: 32%;
+      @include mobile {
+        width: 90vw;
+        margin: 0 auto;
+      }
       //   border: 1px solid black;
 
       &__img {
+        text-align: center;
         overflow: hidden;
-        height: 238px;
         img {
-          width: 100%;
+          width: 80%;
+          min-width: 250px;
         }
       }
       &__date {
@@ -24,6 +38,7 @@
         color: $color-light-grey;
         font-size: 1.6rem;
         padding: 10px 0;
+        text-align: center;
         i {
           padding: 0 5px;
         }
@@ -42,6 +57,9 @@
           font-family: $open-sans;
           font-size: 1.6rem;
           color: $color-light-grey;
+          @include mobile {
+            margin: 20px auto 70px auto;
+          }
         }
       }
     }

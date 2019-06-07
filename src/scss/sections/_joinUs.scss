@@ -11,13 +11,20 @@ section.joinUs {
   .item {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 40%;
     padding: 30px;
     // border: 1px solid white;
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translate(0, -50%);
+
+    @include tablet {
+      width: 50%;
+    }
+    @include mobile {
+      width: 90%;
+    }
 
     &__title {
       width: 100%;
