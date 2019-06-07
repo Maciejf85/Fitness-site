@@ -8,9 +8,16 @@ menuButton.addEventListener("click", function() {
 });
 const position = window.addEventListener("scroll", () => {
   h = window.innerHeight;
-  window.pageYOffset > h
-    ? (topButton.style.display = "block")
-    : (topButton.style.display = "none");
+  if (window.pageYOffset > h) {
+    topButton.style.display = "block";
+    topButton.classList.add("show");
+    topButton.classList.remove("hide");
+  } else {
+    topButton.classList.remove("show");
+    topButton.classList.add("hide");
+  }
+  // ? (topButton.style.display = "block")
+  // : (topButton.style.display = "none");
 });
 
 const scrollToTop = () => {

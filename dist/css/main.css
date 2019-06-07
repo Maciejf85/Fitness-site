@@ -832,7 +832,18 @@ a {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  -webkit-transform: translateX(500px);
+      -ms-transform: translateX(500px);
+          transform: translateX(500px);
   display: none; }
+  @media (max-width: 640px) {
+    .top-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      opacity: 0.6; } }
   .top-button i {
     position: absolute;
     top: 50%;
@@ -843,9 +854,12 @@ a {
     font-size: 4rem;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); }
+    @media (max-width: 640px) {
+      .top-button i {
+        font-size: 2.7rem; } }
   .top-button:hover {
     cursor: pointer;
-    background: #000; }
+    opacity: 1; }
 
 .nav {
   background-color: #121315;
@@ -947,6 +961,31 @@ a {
       position: relative;
       color: white; }
 
+.show {
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: block; }
+
+.hide {
+  -webkit-animation-name: slideDown;
+          animation-name: slideDown;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
 .active {
   position: relative;
   color: #fe625b;
@@ -985,7 +1024,7 @@ a {
   @media (max-width: 640px) {
     .hamburger {
       display: block;
-      fill: white; } }
+      fill: #fe625b; } }
   .hamburger:hover {
     cursor: pointer; }
 
@@ -1008,3 +1047,47 @@ a {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1); } }
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px); }
+  50% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px); }
+  50% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); }
+  100% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px); } }
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  50% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); }
+  100% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px); } }
