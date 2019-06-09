@@ -1,10 +1,21 @@
 const topButton = document.querySelector(".top-button");
 const menuButton = document.querySelector(".hamburger");
 const navList = document.querySelector(".nav__list");
+
 let h = window.innerHeight;
 
 menuButton.addEventListener("click", function() {
   navList.classList.toggle("mobile_menu");
+  const elements = this.querySelectorAll("div");
+  navList.classList.length > 1
+    ? elements.forEach(item => {
+        item.style.background = "hsl(3, 99%, 68%)";
+        item.classList.toggle("change");
+      })
+    : elements.forEach(item => {
+        item.style.background = "white";
+        item.classList.toggle("change");
+      });
 });
 const position = window.addEventListener("scroll", () => {
   h = window.innerHeight;
@@ -16,8 +27,6 @@ const position = window.addEventListener("scroll", () => {
     topButton.classList.remove("show");
     topButton.classList.add("hide");
   }
-  // ? (topButton.style.display = "block")
-  // : (topButton.style.display = "none");
 });
 
 const scrollToTop = () => {
