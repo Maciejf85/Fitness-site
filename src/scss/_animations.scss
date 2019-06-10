@@ -1,0 +1,41 @@
+@keyframes showUp {
+  0% {
+    transform: translateX(1000px) translateY(-1000px) scale(0.1);
+    width: 40vw;
+    height: 40vw;
+  }
+  75% {
+    border-radius: 50%;
+    width: 80vw;
+    height: 80vw;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 0;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateX(500px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}

@@ -1,20 +1,4 @@
-@mixin underline($color) {
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: 2px;
-    width: 150px;
-    background: $color;
-    @include mobile {
-      width: 120px;
-    }
-  }
-}
-
+// Section title
 @mixin section_title {
   &__title {
     position: relative;
@@ -40,6 +24,24 @@
       @include mobile {
         padding: 0 30px;
       }
+    }
+  }
+}
+// Section title underline
+
+@mixin underline($color) {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 2px;
+    width: 150px;
+    background: $color;
+    @include mobile {
+      width: 120px;
     }
   }
 }

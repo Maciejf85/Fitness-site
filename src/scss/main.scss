@@ -2,6 +2,7 @@
 @import "./mixins";
 @import "./variables";
 @import "./buttons";
+@import "./animations";
 @import "./sections/workouts";
 @import "./sections/transformation";
 @import "./sections/schedule";
@@ -16,6 +17,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+// Headers
 h1,
 h2,
 h3,
@@ -40,14 +42,17 @@ body {
   position: relative;
   font-family: $montserrat;
 }
+// Links
 a {
   color: inherit;
   text-decoration: none;
 }
+// Container
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+//  Main photo
 .main {
   position: relative;
   height: calc(100vh - 50px);
@@ -61,6 +66,7 @@ a {
     top: 50px;
   }
 }
+// Top button
 .top-button {
   position: fixed;
   bottom: 70px;
@@ -99,6 +105,7 @@ a {
     opacity: 1;
   }
 }
+//  Navigation
 .nav {
   background-color: #121315;
   width: 100%;
@@ -177,7 +184,7 @@ a {
     }
   }
 }
-
+// Top button show animation
 .show {
   animation-name: slideUp;
   animation-duration: 0.6s;
@@ -186,6 +193,7 @@ a {
   animation-fill-mode: forwards;
   display: block;
 }
+// Top button hide animation
 .hide {
   animation-name: slideDown;
   animation-duration: 0.4s;
@@ -193,6 +201,7 @@ a {
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
+// Navigation active
 .active {
   position: relative;
   color: $color-primary;
@@ -222,6 +231,7 @@ a {
   font-style: italic;
   font-weight: bold;
 }
+// Hamburger menu
 .hamburger {
   z-index: 9999;
   position: relative;
@@ -265,47 +275,5 @@ a {
   }
   &:hover {
     cursor: pointer;
-  }
-}
-
-@keyframes showUp {
-  0% {
-    transform: translateX(1000px) translateY(-1000px) scale(0.1);
-    width: 40vw;
-    height: 40vw;
-  }
-  75% {
-    border-radius: 50%;
-    width: 80vw;
-    height: 80vw;
-  }
-  100% {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    border-radius: 0;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateX(500px);
-  }
-  50% {
-    transform: translateX(-30px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideDown {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-30px);
-  }
-  100% {
-    transform: translateX(500px);
   }
 }
