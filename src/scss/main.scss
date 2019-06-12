@@ -3,12 +3,12 @@
 @import "./variables";
 @import "./buttons";
 @import "./animations";
-@import "./sections/workouts";
-@import "./sections/transformation";
-@import "./sections/schedule";
-@import "./sections/joinUs";
-@import "./sections/ourTeam";
-@import "./sections/priceList";
+@import "./sections/MainPage/workouts";
+@import "./sections/MainPage/transformation";
+@import "./sections/MainPage/schedule";
+@import "./sections/MainPage/joinUs";
+@import "./sections/MainPage/ourTeam";
+@import "./sections/MainPage/priceList";
 @import "./sections/footer";
 
 * {
@@ -53,7 +53,8 @@ a {
   margin: 0 auto;
 }
 //  Main photo
-.main {
+.main,
+.programs {
   position: relative;
   height: calc(100vh - 50px);
   background-image: url("../../src/img/img3.jpg");
@@ -64,6 +65,19 @@ a {
   @include mobile {
     width: 100%;
     top: 50px;
+  }
+
+  &__text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: 4px;
+    font-family: $exo;
+    font-style: italic;
+    font-weight: bold;
   }
 }
 // Top button
@@ -109,6 +123,11 @@ a {
 .nav {
   background-color: #121315;
   width: 100%;
+  padding: 50px 0;
+
+  &.white {
+    background: white;
+  }
 
   @include mobile {
     position: fixed;
@@ -136,6 +155,10 @@ a {
     font-weight: 700;
     letter-spacing: 3px;
 
+    &.white {
+      color: black;
+    }
+
     span {
       color: $color-primary;
     }
@@ -144,6 +167,13 @@ a {
     font-size: 1.2rem;
     flex-grow: 7;
     color: $color-primary;
+    &.white {
+      color: black;
+
+      li:hover {
+        color: $color-primary;
+      }
+    }
     @include mobile {
       position: absolute;
       right: 5%;
@@ -204,8 +234,15 @@ a {
 // Navigation active
 .active {
   position: relative;
-  color: $color-primary;
   color: white;
+
+  &.white {
+    color: $color-primary;
+
+    &::after {
+      background: $color-primary;
+    }
+  }
 
   &::after {
     position: absolute;
@@ -219,18 +256,7 @@ a {
     display: block;
   }
 }
-.main__text {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  letter-spacing: 4px;
-  font-family: $exo;
-  font-style: italic;
-  font-weight: bold;
-}
+
 // Hamburger menu
 .hamburger {
   z-index: 9999;

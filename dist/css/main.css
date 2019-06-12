@@ -886,7 +886,8 @@ a {
   max-width: 1200px;
   margin: 0 auto; }
 
-.main {
+.main,
+.programs {
   position: relative;
   height: calc(100vh - 50px);
   background-image: url("../../src/img/img3.jpg");
@@ -896,9 +897,24 @@ a {
           background-size: cover;
   text-transform: uppercase; }
   @media (max-width: 640px) {
-    .main {
+    .main,
+    .programs {
       width: 100%;
       top: 50px; } }
+  .main__text,
+  .programs__text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: 4px;
+    font-family: "Exo 2", sans-serif;
+    font-style: italic;
+    font-weight: bold; }
 
 .top-button {
   position: fixed;
@@ -942,7 +958,10 @@ a {
 
 .nav {
   background-color: #121315;
-  width: 100%; }
+  width: 100%;
+  padding: 50px 0; }
+  .nav.white {
+    background: white; }
   @media (max-width: 640px) {
     .nav {
       position: fixed;
@@ -974,6 +993,8 @@ a {
             flex-grow: 3;
     font-weight: 700;
     letter-spacing: 3px; }
+    .nav__logo.white {
+      color: black; }
     .nav__logo span {
       color: #fe655d; }
   .nav__items {
@@ -983,6 +1004,10 @@ a {
         -ms-flex-positive: 7;
             flex-grow: 7;
     color: #fe655d; }
+    .nav__items.white {
+      color: black; }
+      .nav__items.white li:hover {
+        color: #fe655d; }
     @media (max-width: 640px) {
       .nav__items {
         position: absolute;
@@ -1067,8 +1092,11 @@ a {
 
 .active {
   position: relative;
-  color: #fe655d;
   color: white; }
+  .active.white {
+    color: #fe655d; }
+    .active.white::after {
+      background: #fe655d; }
   .active::after {
     position: absolute;
     content: "";
@@ -1081,20 +1109,6 @@ a {
     height: 2px;
     background: white;
     display: block; }
-
-.main__text {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: white;
-  letter-spacing: 4px;
-  font-family: "Exo 2", sans-serif;
-  font-style: italic;
-  font-weight: bold; }
 
 .hamburger {
   z-index: 9999;
