@@ -916,6 +916,9 @@ a {
     font-style: italic;
     font-weight: bold; }
 
+.programs {
+  background-image: url("../../src/img/img3_add.jpg"); }
+
 .top-button {
   position: fixed;
   bottom: 70px;
