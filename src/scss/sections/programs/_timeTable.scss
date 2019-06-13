@@ -2,10 +2,8 @@
   margin-top: 100px;
   margin-bottom: 50px;
   text-align: center;
-  // border: 1px solid red;
   @include section_title;
   .element {
-    border: 1px solid red;
     padding: 15px;
     &__title {
       width: 100%;

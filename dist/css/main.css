@@ -808,7 +808,6 @@ section.joinUs {
         .timetable__title p {
           padding: 0 30px; } }
   .timetable .element {
-    border: 1px solid red;
     padding: 15px; }
     .timetable .element__title {
       width: 100%;
