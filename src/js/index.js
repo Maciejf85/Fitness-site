@@ -9,11 +9,9 @@ menuButton.addEventListener("click", function() {
   const elements = this.querySelectorAll("div");
   navList.classList.length > 1
     ? elements.forEach(item => {
-        item.style.background = "hsl(3, 99%, 68%)";
         item.classList.toggle("change");
       })
     : elements.forEach(item => {
-        item.style.background = "white";
         item.classList.toggle("change");
       });
 });

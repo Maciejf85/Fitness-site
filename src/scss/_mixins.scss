@@ -8,7 +8,7 @@
     letter-spacing: 2px;
     @include underline($color-primary);
     @include tablet {
-      padding: 0 50px;
+      padding: 0 30px;
     }
     @include mobile {
       h2 {
@@ -22,6 +22,9 @@
       font-size: 1.75rem;
       font-family: $open-sans;
       @include mobile {
+        padding: 0 30px;
+      }
+      @include tablet {
         padding: 0 30px;
       }
     }

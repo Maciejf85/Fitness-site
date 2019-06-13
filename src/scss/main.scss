@@ -9,6 +9,7 @@
 @import "./sections/MainPage/joinUs";
 @import "./sections/MainPage/ourTeam";
 @import "./sections/MainPage/priceList";
+@import "./sections/programs/timeTable";
 @import "./sections/footer";
 
 * {
@@ -52,7 +53,8 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
-//  Main photo
+// Main Page
+
 .main,
 .programs {
   position: relative;
@@ -78,10 +80,33 @@ a {
     font-family: $exo;
     font-style: italic;
     font-weight: bold;
+    @include tablet {
+      h1 {
+        font-size: 10rem;
+      }
+    }
+    @include mobile {
+      h1 {
+        font-size: 5rem;
+      }
+    }
   }
 }
+// Programs Page
 .programs {
+  max-height: 400px;
   background-image: url("../../src/img/img3_add.jpg");
+  &__text {
+    h1 {
+      font-size: 8rem;
+    }
+
+    @include mobile {
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
 }
 // Top button
 .top-button {
@@ -130,6 +155,9 @@ a {
 
   &.white {
     background: white;
+    @include mobile {
+      padding: 0;
+    }
   }
 
   @include mobile {
@@ -172,6 +200,9 @@ a {
     color: $color-primary;
     &.white {
       color: black;
+      @include mobile {
+        color: white;
+      }
 
       li:hover {
         color: $color-primary;
@@ -279,9 +310,13 @@ a {
     border-radius: 5px;
     background: white;
     transition: 0.1s ease-in-out;
+    &.white {
+      background: black;
+    }
     &.change {
       top: 18px;
       transform: rotate(-45deg);
+      background: $color-primary;
     }
   }
   .span2 {
