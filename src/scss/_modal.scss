@@ -1,0 +1,29 @@
+.modal{
+    display: none;  
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999
+    
+}
+.window{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:40vw;
+    height: 30vw;
+    background: $color-primary;
+    color: white;
+    font-size: 3rem;
+  @include section_title;
+  &__title{
+      margin: 30px 0;
+  &::before{
+      background:white;
+  }
+  }
+}

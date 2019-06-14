@@ -1,22 +1,41 @@
 const topButton = document.querySelector(".top-button");
 const menuButton = document.querySelector(".hamburger");
+
 const navList = document.querySelector(".nav__list");
 
+// modal window
+const buttons = document.querySelectorAll('.priceList  button');
+
+if (buttons.length !== 0) {
+  buttons.forEach(item =>
+    item.addEventListener('click', e => {
+
+      const price = e.target.dataset.price;
+
+      console.log(price)
+
+    }))
+}
+
+// Top button 
 let h = window.innerHeight;
 
-menuButton.addEventListener("click", function() {
+menuButton.addEventListener("click", function () {
   navList.classList.toggle("mobile_menu");
   const elements = this.querySelectorAll("div");
   navList.classList.length > 1
     ? elements.forEach(item => {
-        item.classList.toggle("change");
-      })
+      item.classList.toggle("change");
+    })
     : elements.forEach(item => {
-        item.classList.toggle("change");
-      });
+      item.classList.toggle("change");
+    });
 });
+
 const position = window.addEventListener("scroll", () => {
+
   h = window.innerHeight;
+
   if (window.pageYOffset > h) {
     topButton.style.display = "block";
     topButton.classList.add("show");
@@ -28,7 +47,9 @@ const position = window.addEventListener("scroll", () => {
 });
 
 const scrollToTop = () => {
+
   const c = document.documentElement.scrollTop;
+
   if (c > 0) {
     let value = 16;
     window.requestAnimationFrame(scrollToTop);

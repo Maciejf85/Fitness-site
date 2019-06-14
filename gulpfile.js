@@ -6,11 +6,11 @@ var autoprefixer = require("gulp-autoprefixer");
 // let rename = require("gulp-rename");
 let uglify = require("gulp-uglify-es").default;
 
-gulp.task("reload", function() {
+gulp.task("reload", function () {
   browserSync.reload();
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", function () {
   browserSync({
     server: "./"
   });
@@ -19,7 +19,7 @@ gulp.task("serve", function() {
   gulp.watch("./src/js/*.js", ["reload"]);
 });
 
-gulp.task("sass", function() {
+gulp.task("sass", function () {
   return (
     gulp
       .src("src/scss/main.scss")
@@ -27,7 +27,7 @@ gulp.task("sass", function() {
       .pipe(
         sass({
           errLogToConsole: true,
-          outputStyle: "nested" //nested, expanded, compact, compressed.
+          outputStyle: "compressed" //nested, expanded, compact, compressed.
         })
       )
       // .pipe(sourcemaps.write())
@@ -41,13 +41,13 @@ gulp.task("sass", function() {
   );
 });
 
-gulp.task("watch", ["sass", "serve"], function() {
+gulp.task("watch", ["sass", "serve"], function () {
   gulp.watch("src/scss/**/*.scss", ["sass"]);
 });
 
 // minifikacja javascript ===> gulp js
 
-gulp.task("uglify", function() {
+gulp.task("uglify", function () {
   return (
     gulp
       .src("./src/js/**/*.js")

@@ -1,493 +1,506 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./dist/css/main.css" />
-    <link rel="stylesheet" href="./src/fontello/css/fontello.css" />
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Exo+2:400,600,700|Montserrat:400,600,700|Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Site title -->
-    <title>Fitness site</title>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="nav white">
-      <div class="nav__container">
-        <div class="nav__logo white">Fitness</div>
-        <div class="nav__items white">
-          <div class="hamburger ">
-            <div class="span1 white "></div>
-            <div class="span2 white "></div>
-            <div class="span3 white "></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/css/main.css" />
+  <link rel="stylesheet" href="./src/fontello/css/fontello.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,600,700|Montserrat:400,600,700|Open+Sans&display=swap"
+    rel="stylesheet" />
+  <!-- Site title -->
+  <title>Fitness site</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav white">
+    <div class="nav__container">
+      <div class="nav__logo white">Fitness</div>
+      <div class="nav__items white">
+        <div class="hamburger ">
+          <div class="span1 white "></div>
+          <div class="span2 white "></div>
+          <div class="span3 white "></div>
+        </div>
+        <ul class="nav__list">
+          <li><a href="index.html">home</a></li>
+          <li><a class="active white " href="programs.html">programs</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Scroll button -->
+  <div class="top-button hide">
+    <i class="icon-up-big"></i>
+  </div>
+
+  <!-- Main image -->
+  <div class="programs">
+    <div class="programs__text">
+      <h1>programs</h1>
+    </div>
+  </div>
+  <!-- Section Timetable -->
+  <section class="timetable" id="timetable">
+    <div class="container">
+      <div class="timetable__title">
+        <h2>timetable</h2>
+        <p>
+          Whether you want to do the yoga, go to the gym, or simply have some
+          fun this is where you will find the opening times for each of your
+          local leisure facilities.
+        </p>
+      </div>
+
+      <!-- Monday -->
+      <div class="element">
+        <div class="element__title">
+          <h2>monday</h2>
+        </div>
+        <div class="element__items">
+          <!-- item 1 -->
+          <div class="item">
+            <div class="item__title">level 1 yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>10AM - 12:30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                While it is suitable for beginners, it is also for those
+                working with an injury (tell the teacher first) and more
+                seasoned practitioners.
+              </p>
+            </div>
           </div>
-          <ul class="nav__list">
-            <li><a href="index.html">home</a></li>
-            <li><a class="active white " href="programs.html">programs</a></li>
-            <li><a href="gallery.html">gallery</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </ul>
+
+          <!-- item 2 -->
+          <div class="item">
+            <div class="item__title">stretching</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>1PM - 2:30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                Improve the flexibility of your joints and muscles with our
+                stretch classes. Our experienced fitness instructors will lead
+                you through a series of stretches.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="item">
+            <div class="item__title">level 2 yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i> 2:30 PM - 4 PM
+            </div>
+            <div class="item__description">
+              <p>
+                Level 2 classes assume a working knowledge of yoga. It might
+                proceed a little bit quicker but time will still be spent
+                working in each pose.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 4 -->
+          <div class="item">
+            <div class="item__title">group core</div>
+            <div class="item__time">
+              <i class="icon-clock"></i> 4 PM - 4.30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                30-minute athletic and functional core strength workout.A
+                strong core, from your shoulders to your hips, will improve
+                your athletic performance, will help prevent back pain and
+                will give you ripped abs!
+              </p>
+            </div>
+          </div>
+
+          <!-- item 5 -->
+          <div class="item">
+            <div class="item__title">iyenga yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>5 PM - 6 PM
+            </div>
+            <div class="item__description">
+              <p>
+                A form of Hatha Yoga that has an emphasis on detail,
+                precision, and alignment in the performance of posture (asana)
+                and breath control (pranayama).
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <!-- Scroll button -->
-    <div class="top-button hide">
-      <i class="icon-up-big"></i>
-    </div>
 
-    <!-- Main image -->
-    <div class="programs">
-      <div class="programs__text"><h1>programs</h1></div>
+      <!-- Tuesday -->
+      <div class="element">
+        <div class="element__title">
+          <h2>tuesday</h2>
+        </div>
+        <div class="element__items">
+          <!-- item 1 -->
+          <div class="item">
+            <div class="item__title">level 1 yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>10AM - 12:30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                While it is suitable for beginners, it is also for those
+                working with an injury (tell the teacher first) and more
+                seasoned practitioners.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="item">
+            <div class="item__title">stretching</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>1PM - 2:30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                Improve the flexibility of your joints and muscles with our
+                stretch classes. Our experienced fitness instructors will lead
+                you through a series of stretches.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="item">
+            <div class="item__title">level 2 yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i> 2:30 PM - 4 PM
+            </div>
+            <div class="item__description">
+              <p>
+                Level 2 classes assume a working knowledge of yoga. It might
+                proceed a little bit quicker but time will still be spent
+                working in each pose.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wednesday -->
+      <div class="element">
+        <div class="element__title">
+          <h2>wednesday</h2>
+        </div>
+        <div class="element__items">
+          <!-- item 1 -->
+          <div class="item">
+            <div class="item__title">level 2 yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i> 2:30 PM - 4 PM
+            </div>
+            <div class="item__description">
+              <p>
+                Level 2 classes assume a working knowledge of yoga. It might
+                proceed a little bit quicker but time will still be spent
+                working in each pose.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="item">
+            <div class="item__title">stretching</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>1PM - 2:30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                Improve the flexibility of your joints and muscles with our
+                stretch classes. Our experienced fitness instructors will lead
+                you through a series of stretches.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="item">
+            <div class="item__title">iyenga yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>5 PM - 6 PM
+            </div>
+            <div class="item__description">
+              <p>
+                A form of Hatha Yoga that has an emphasis on detail,
+                precision, and alignment in the performance of posture (asana)
+                and breath control (pranayama).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thursday -->
+      <div class="element">
+        <div class="element__title">
+          <h2>thursday</h2>
+        </div>
+        <div class="element__items">
+          <!-- item 1 -->
+          <div class="item">
+            <div class="item__title">level 1 yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>10AM - 12:30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                While it is suitable for beginners, it is also for those
+                working with an injury (tell the teacher first) and more
+                seasoned practitioners.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="item">
+            <div class="item__title">stretching</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>1PM - 2:30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                Improve the flexibility of your joints and muscles with our
+                stretch classes. Our experienced fitness instructors will lead
+                you through a series of stretches.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="item">
+            <div class="item__title">level 2 yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i> 2:30 PM - 4 PM
+            </div>
+            <div class="item__description">
+              <p>
+                Level 2 classes assume a working knowledge of yoga. It might
+                proceed a little bit quicker but time will still be spent
+                working in each pose.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Friday -->
+      <div class="element">
+        <div class="element__title">
+          <h2>friday</h2>
+        </div>
+        <div class="element__items">
+          <!-- item 1 -->
+          <div class="item">
+            <div class="item__title">level 2 yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i> 2:30 PM - 4 PM
+            </div>
+            <div class="item__description">
+              <p>
+                Level 2 classes assume a working knowledge of yoga. It might
+                proceed a little bit quicker but time will still be spent
+                working in each pose.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="item">
+            <div class="item__title">stretching</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>1PM - 2:30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                Improve the flexibility of your joints and muscles with our
+                stretch classes. Our experienced fitness instructors will lead
+                you through a series of stretches.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="item">
+            <div class="item__title">iyenga yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>5 PM - 6 PM
+            </div>
+            <div class="item__description">
+              <p>
+                A form of Hatha Yoga that has an emphasis on detail,
+                precision, and alignment in the performance of posture (asana)
+                and breath control (pranayama).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- saturday -->
+      <div class="element">
+        <div class="element__title">
+          <h2>saturday</h2>
+        </div>
+        <div class="element__items">
+          <!-- item 1 -->
+          <div class="item">
+            <div class="item__title">level 1 yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>10AM - 12:30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                While it is suitable for beginners, it is also for those
+                working with an injury (tell the teacher first) and more
+                seasoned practitioners.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="item">
+            <div class="item__title">group core</div>
+            <div class="item__time">
+              <i class="icon-clock"></i> 4 PM - 4.30 PM
+            </div>
+            <div class="item__description">
+              <p>
+                30-minute athletic and functional core strength workout.A
+                strong core, from your shoulders to your hips, will improve
+                your athletic performance, will help prevent back pain and
+                will give you ripped abs!
+              </p>
+            </div>
+          </div>
+
+          <!-- item 3-->
+          <div class="item">
+            <div class="item__title">iyenga yoga</div>
+            <div class="item__time">
+              <i class="icon-clock"></i>5 PM - 6 PM
+            </div>
+            <div class="item__description">
+              <p>
+                A form of Hatha Yoga that has an emphasis on detail,
+                precision, and alignment in the performance of posture (asana)
+                and breath control (pranayama).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Section Timetable -->
-    <section class="timetable" id="timetable">
+  </section>
+  <!-- joinUs Section   -->
+
+  <section class="joinUs">
+    <div class="item">
+      <div class="item__title">
+        <h2>
+          If you had a bad day, don`t worry. <br />
+          Make it better going to the gym!
+        </h2>
+      </div>
+      <div class="item__desc">
+        <p>
+          We all have the same amount of hours in our day. Deciding how to use
+          your hours is up to you.
+        </p>
+      </div>
+      <div class="item__button">
+        <button>join us</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__top">
       <div class="container">
-        <div class="timetable__title">
-          <h2>timetable</h2>
-          <p>
-            Whether you want to do the yoga, go to the gym, or simply have some
-            fun this is where you will find the opening times for each of your
-            local leisure facilities.
-          </p>
-        </div>
-
-        <!-- Monday -->
-        <div class="element">
-          <div class="element__title"><h2>monday</h2></div>
-          <div class="element__items">
-            <!-- item 1 -->
-            <div class="item">
-              <div class="item__title">level 1 yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>10AM - 12:30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  While it is suitable for beginners, it is also for those
-                  working with an injury (tell the teacher first) and more
-                  seasoned practitioners.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 2 -->
-            <div class="item">
-              <div class="item__title">stretching</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>1PM - 2:30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  Improve the flexibility of your joints and muscles with our
-                  stretch classes. Our experienced fitness instructors will lead
-                  you through a series of stretches.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 3 -->
-            <div class="item">
-              <div class="item__title">level 2 yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i> 2:30 PM - 4 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  Level 2 classes assume a working knowledge of yoga. It might
-                  proceed a little bit quicker but time will still be spent
-                  working in each pose.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 4 -->
-            <div class="item">
-              <div class="item__title">group core</div>
-              <div class="item__time">
-                <i class="icon-clock"></i> 4 PM - 4.30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  30-minute athletic and functional core strength workout.A
-                  strong core, from your shoulders to your hips, will improve
-                  your athletic performance, will help prevent back pain and
-                  will give you ripped abs!
-                </p>
-              </div>
-            </div>
-
-            <!-- item 5 -->
-            <div class="item">
-              <div class="item__title">iyenga yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>5 PM - 6 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  A form of Hatha Yoga that has an emphasis on detail,
-                  precision, and alignment in the performance of posture (asana)
-                  and breath control (pranayama).
-                </p>
-              </div>
-            </div>
+        <!-- footer item -->
+        <div class="item">
+          <div class="item__title">
+            <h2>about us</h2>
+          </div>
+          <div class="item__desc">
+            <p>
+              Welcome to Fitnesto, the leading provider of community leisure
+              facilities and active opportunities. Whether you visit us for
+              fitness or functions, training or treatments, eating out or
+              entertainment, we put your health and well-being at the heart of
+              everything we do.
+            </p>
           </div>
         </div>
 
-        <!-- Tuesday -->
-        <div class="element">
-          <div class="element__title"><h2>tuesday</h2></div>
-          <div class="element__items">
-            <!-- item 1 -->
-            <div class="item">
-              <div class="item__title">level 1 yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>10AM - 12:30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  While it is suitable for beginners, it is also for those
-                  working with an injury (tell the teacher first) and more
-                  seasoned practitioners.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 2 -->
-            <div class="item">
-              <div class="item__title">stretching</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>1PM - 2:30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  Improve the flexibility of your joints and muscles with our
-                  stretch classes. Our experienced fitness instructors will lead
-                  you through a series of stretches.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 3 -->
-            <div class="item">
-              <div class="item__title">level 2 yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i> 2:30 PM - 4 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  Level 2 classes assume a working knowledge of yoga. It might
-                  proceed a little bit quicker but time will still be spent
-                  working in each pose.
-                </p>
-              </div>
-            </div>
+        <!-- footer item -->
+        <div class="item">
+          <div class="item__title">
+            <h2>navigation</h2>
+          </div>
+          <div class="item__desc">
+            <ul class="navigation">
+              <li><a href="#workouts">workouts</a></li>
+              <li><a href="#transformation">body transformation</a></li>
+              <li><a href="#schedule">schedule</a></li>
+              <li><a href="#joinUs">join us</a></li>
+              <li><a href="#courses">list of courses</a></li>
+            </ul>
           </div>
         </div>
 
-        <!-- Wednesday -->
-        <div class="element">
-          <div class="element__title"><h2>wednesday</h2></div>
-          <div class="element__items">
-            <!-- item 1 -->
-            <div class="item">
-              <div class="item__title">level 2 yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i> 2:30 PM - 4 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  Level 2 classes assume a working knowledge of yoga. It might
-                  proceed a little bit quicker but time will still be spent
-                  working in each pose.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 2 -->
-            <div class="item">
-              <div class="item__title">stretching</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>1PM - 2:30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  Improve the flexibility of your joints and muscles with our
-                  stretch classes. Our experienced fitness instructors will lead
-                  you through a series of stretches.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 3 -->
-            <div class="item">
-              <div class="item__title">iyenga yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>5 PM - 6 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  A form of Hatha Yoga that has an emphasis on detail,
-                  precision, and alignment in the performance of posture (asana)
-                  and breath control (pranayama).
-                </p>
-              </div>
-            </div>
+        <!-- footer item -->
+        <div class="item">
+          <div class="item__title">
+            <h2>contact information</h2>
+          </div>
+          <div class="item__desc">
+            <p>
+              4096 N Highland St, Arlington, VA 32101, USA
+            </p>
+            <a class="mail" href="mailto:fialek85@gmail.com">fialek85@gmail.com</a>
           </div>
         </div>
-
-        <!-- Thursday -->
-        <div class="element">
-          <div class="element__title"><h2>thursday</h2></div>
-          <div class="element__items">
-            <!-- item 1 -->
-            <div class="item">
-              <div class="item__title">level 1 yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>10AM - 12:30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  While it is suitable for beginners, it is also for those
-                  working with an injury (tell the teacher first) and more
-                  seasoned practitioners.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 2 -->
-            <div class="item">
-              <div class="item__title">stretching</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>1PM - 2:30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  Improve the flexibility of your joints and muscles with our
-                  stretch classes. Our experienced fitness instructors will lead
-                  you through a series of stretches.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 3 -->
-            <div class="item">
-              <div class="item__title">level 2 yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i> 2:30 PM - 4 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  Level 2 classes assume a working knowledge of yoga. It might
-                  proceed a little bit quicker but time will still be spent
-                  working in each pose.
-                </p>
-              </div>
-            </div>
+        <!-- footer item -->
+        <div class="item">
+          <div class="item__title">
+            <h2>we are open</h2>
           </div>
-        </div>
-        <!-- Friday -->
-        <div class="element">
-          <div class="element__title"><h2>friday</h2></div>
-          <div class="element__items">
-            <!-- item 1 -->
-            <div class="item">
-              <div class="item__title">level 2 yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i> 2:30 PM - 4 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  Level 2 classes assume a working knowledge of yoga. It might
-                  proceed a little bit quicker but time will still be spent
-                  working in each pose.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 2 -->
-            <div class="item">
-              <div class="item__title">stretching</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>1PM - 2:30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  Improve the flexibility of your joints and muscles with our
-                  stretch classes. Our experienced fitness instructors will lead
-                  you through a series of stretches.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 3 -->
-            <div class="item">
-              <div class="item__title">iyenga yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>5 PM - 6 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  A form of Hatha Yoga that has an emphasis on detail,
-                  precision, and alignment in the performance of posture (asana)
-                  and breath control (pranayama).
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- saturday -->
-        <div class="element">
-          <div class="element__title"><h2>saturday</h2></div>
-          <div class="element__items">
-            <!-- item 1 -->
-            <div class="item">
-              <div class="item__title">level 1 yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>10AM - 12:30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  While it is suitable for beginners, it is also for those
-                  working with an injury (tell the teacher first) and more
-                  seasoned practitioners.
-                </p>
-              </div>
-            </div>
-
-            <!-- item 2 -->
-            <div class="item">
-              <div class="item__title">group core</div>
-              <div class="item__time">
-                <i class="icon-clock"></i> 4 PM - 4.30 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  30-minute athletic and functional core strength workout.A
-                  strong core, from your shoulders to your hips, will improve
-                  your athletic performance, will help prevent back pain and
-                  will give you ripped abs!
-                </p>
-              </div>
-            </div>
-
-            <!-- item 3-->
-            <div class="item">
-              <div class="item__title">iyenga yoga</div>
-              <div class="item__time">
-                <i class="icon-clock"></i>5 PM - 6 PM
-              </div>
-              <div class="item__description">
-                <p>
-                  A form of Hatha Yoga that has an emphasis on detail,
-                  precision, and alignment in the performance of posture (asana)
-                  and breath control (pranayama).
-                </p>
-              </div>
-            </div>
+          <div class="item__desc">
+            <ul class="hours">
+              <li>Mon-Thu: 9:30 - 21:00</li>
+              <li>Fri: 6:00 - 21:00</li>
+              <li>Sat: 10:00 - 15:00</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- joinUs Section   -->
-
-    <section class="joinUs">
-      <div class="item">
-        <div class="item__title">
-          <h2>
-            If you had a bad day, don`t worry. <br />
-            Make it better going to the gym!
-          </h2>
-        </div>
-        <div class="item__desc">
-          <p>
-            We all have the same amount of hours in our day. Deciding how to use
-            your hours is up to you.
-          </p>
-        </div>
-        <div class="item__button">
-          <button>join us</button>
-        </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© Maciej Fiałkowski <span>2019 r. </span></p>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="container">
-          <!-- footer item -->
-          <div class="item">
-            <div class="item__title">
-              <h2>about us</h2>
-            </div>
-            <div class="item__desc">
-              <p>
-                Welcome to Fitnesto, the leading provider of community leisure
-                facilities and active opportunities. Whether you visit us for
-                fitness or functions, training or treatments, eating out or
-                entertainment, we put your health and well-being at the heart of
-                everything we do.
-              </p>
-            </div>
-          </div>
+  <script src="./src/js/index.js"></script>
+</body>
 
-          <!-- footer item -->
-          <div class="item">
-            <div class="item__title">
-              <h2>navigation</h2>
-            </div>
-            <div class="item__desc">
-              <ul class="navigation">
-                <li><a href="#workouts">workouts</a></li>
-                <li><a href="#transformation">body transformation</a></li>
-                <li><a href="#schedule">schedule</a></li>
-                <li><a href="#joinUs">join us</a></li>
-                <li><a href="#courses">list of courses</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- footer item -->
-          <div class="item">
-            <div class="item__title">
-              <h2>contact information</h2>
-            </div>
-            <div class="item__desc">
-              <p>
-                4096 N Highland St, Arlington, VA 32101, USA
-              </p>
-              <a class="mail" href="mailto:fialek85@gmail.com"
-                >fialek85@gmail.com</a
-              >
-            </div>
-          </div>
-          <!-- footer item -->
-          <div class="item">
-            <div class="item__title">
-              <h2>we are open</h2>
-            </div>
-            <div class="item__desc">
-              <ul class="hours">
-                <li>Mon-Thu: 9:30 - 21:00</li>
-                <li>Fri: 6:00 - 21:00</li>
-                <li>Sat: 10:00 - 15:00</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <p>© Maciej Fiałkowski <span>2019 r. </span></p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./src/js/index.js"></script>
-  </body>
 </html>

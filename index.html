@@ -1,551 +1,557 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./dist/css/main.css" />
-    <link rel="stylesheet" href="./src/fontello/css/fontello.css" />
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Montserrat:400,700|Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Site title -->
-    <title>Fitness site</title>
-  </head>
-  <body>
-    <!-- Navigation -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <nav class="nav">
-      <div class="nav__container">
-        <div class="nav__logo">Fit<span>ness</span></div>
-        <div class="nav__items">
-          <div class="hamburger">
-            <div class="span1 "></div>
-            <div class="span2 "></div>
-            <div class="span3 "></div>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/css/main.css" />
+  <link rel="stylesheet" href="./src/fontello/css/fontello.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Montserrat:400,700|Open+Sans&display=swap"
+    rel="stylesheet" />
+  <!-- Site title -->
+  <title>Fitness site</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+
+  <nav class="nav">
+    <div class="nav__container">
+      <div class="nav__logo">Fit<span>ness</span></div>
+      <div class="nav__items">
+        <div class="hamburger">
+          <div class="span1 "></div>
+          <div class="span2 "></div>
+          <div class="span3 "></div>
+        </div>
+        <ul class="nav__list">
+          <li><a class="active" href="index.html">home</a></li>
+          <li><a href="programs.html">programs</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scroll button -->
+  <div class="top-button hide">
+    <i class="icon-up-big"></i>
+  </div>
+
+  <!-- Main image -->
+  <div class="main">
+    <div class="main__text">
+      <h1>women fitness</h1>
+    </div>
+  </div>
+
+  <!-- 1. Section Workout -->
+
+  <div class="container">
+    <section class="workouts" id="workouts">
+      <div class="workouts__title">
+        <h2>workouts</h2>
+        <p>Our exclusive training session just for you. Create your style</p>
+      </div>
+      <div class="workouts__items">
+        <!-- 1.1 Section element -->
+
+        <div class="element">
+          <div class="element__img">
+            <img src="./src/img/basic_adj.jpg" alt="basic-exercises" />
           </div>
-          <ul class="nav__list">
-            <li><a class="active" href="index.html">home</a></li>
-            <li><a href="programs.html">programs</a></li>
-            <li><a href="gallery.html">gallery</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </ul>
+          <div class="element__desc">
+            <div class="element__desc__header">begginer level</div>
+            <div class="element__desc__title">basic weights</div>
+            <div class="element__desc__article">
+              <p>
+                If you have never used the free weights section of the gym (or
+                are seriously out of practice), basic exercises will ease you
+                into strengthening your muscles with free weights.
+              </p>
+            </div>
+            <div class="element__desc__link">
+              view workouts
+              <i class="icon-right-open"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1.2 Section element -->
+
+        <div class="element">
+          <div class="element__img">
+            <img src="./src/img/stretching_adj.jpg" alt="stretching exercises" />
+          </div>
+          <div class="element__desc">
+            <div class="element__desc__header">intermediate level</div>
+            <div class="element__desc__title">stretching exercises</div>
+            <div class="element__desc__article">
+              <p>
+                Obviously, if you are working out, stretching can do your body
+                wonders. After exercising, your muscles may feel tight.
+              </p>
+            </div>
+            <div class="element__desc__link">
+              view workouts
+              <i class="icon-right-open"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1.3 Section element -->
+
+        <div class="element">
+          <div class="element__img">
+            <img src="./src/img/aerobics_adj.jpg" alt="advanced level" />
+          </div>
+          <div class="element__desc">
+            <div class="element__desc__header">advanced level</div>
+            <div class="element__desc__title">aerobics program</div>
+            <div class="element__desc__article">
+              <p>
+                Besides strengthening your heart and lungs, aerobic exercise
+                can help lower your cholesterol, reduce your risk of type 2
+                diabetes, improve your immune function, and lower your blood
+                pressure.
+              </p>
+            </div>
+            <div class="element__desc__link">
+              view workouts
+              <i class="icon-right-open"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1.4 Section element -->
+
+        <div class="element">
+          <div class="element__img">
+            <img src="./src/img/abs_adj.jpg" alt="advanced level" />
+          </div>
+          <div class="element__desc">
+            <div class="element__desc__header">advanced level</div>
+            <div class="element__desc__title">abs workout</div>
+            <div class="element__desc__article">
+              <p>
+                Tone your way to a bikini body with the ABC workout. Shake up
+                your workout routine with something that's fun! The ABC
+                workout adds variety to your usual exercises.
+              </p>
+            </div>
+            <div class="element__desc__link">
+              view workouts
+              <i class="icon-right-open"></i>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
+  </div>
 
-    <!-- Scroll button -->
-    <div class="top-button hide">
-      <i class="icon-up-big"></i>
+  <!-- 2. Section Transformation-->
+
+  <section class="transformation" id="transformation">
+    <div class="element">
+      <div class="element__header">Revolutionize your body and soul!</div>
+      <div class="element__title">body transformation</div>
+      <div class="element__article">
+        <!-- 2.1 Section item  -->
+
+        <div class="item">
+          <div class="item__title">
+            <h2>01.</h2>
+            <span>Workout</span>
+          </div>
+          <div class="item__article">
+            <p>
+              Physical exercise is any bodily activity that enhances or
+              maintains physical fitness and overall health and wellness.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2.2 Section item  -->
+
+        <div class="item">
+          <div class="item__title">
+            <h2>02.</h2>
+            <span>Spinning</span>
+          </div>
+          <div class="item__article">
+            <p>
+              The average Spinning class burns an average of 500 calories,
+              which can bring unprecedented results.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2.3 Section item  -->
+
+        <div class="item">
+          <div class="item__title">
+            <h2>03.</h2>
+            <span>Pilates</span>
+          </div>
+          <div class="item__article">
+            <p>
+              My Pilates classes give you an opportunity to train your mind
+              and not only your muscles. Try it today!
+            </p>
+          </div>
+        </div>
+
+        <!-- 2.4 Section item  -->
+
+        <div class="item">
+          <div class="item__title">
+            <h2>04.</h2>
+            <span>Core training</span>
+          </div>
+          <div class="item__article">
+            <p>
+              Core training is the training of muscles. Special groups of
+              muscles are gradually loaded for strength improvement.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Main image -->
-    <div class="main">
-      <div class="main__text"><h1>women fitness</h1></div>
-    </div>
+  <!-- 3. Section Schedule -->
 
-    <!-- 1. Section Workout -->
-
+  <section class="schedule" id="schedule">
     <div class="container">
-      <section class="workouts" id="workouts">
-        <div class="workouts__title">
-          <h2>workouts</h2>
-          <p>Our exclusive training session just for you. Create your style</p>
-        </div>
-        <div class="workouts__items">
-          <!-- 1.1 Section element -->
+      <div class="schedule__title">
+        <h2>class timing schedule</h2>
+        <p>
+          Choose your favorite class and start now. Remember, the only bad
+          workout is the one you didn’t do!
+        </p>
+      </div>
+      <div class="schedule__elements">
+        <!--3.1 Schedule item   -->
 
-          <div class="element">
-            <div class="element__img">
-              <img src="./src/img/basic_adj.jpg" alt="basic-exercises" />
-            </div>
-            <div class="element__desc">
-              <div class="element__desc__header">begginer level</div>
-              <div class="element__desc__title">basic weights</div>
-              <div class="element__desc__article">
-                <p>
-                  If you have never used the free weights section of the gym (or
-                  are seriously out of practice), basic exercises will ease you
-                  into strengthening your muscles with free weights.
-                </p>
-              </div>
-              <div class="element__desc__link">
-                view workouts
-                <i class="icon-right-open"></i>
-              </div>
-            </div>
+        <div class="item">
+          <div class="item__img">
+            <img src="./src/img/aerobics.jpg" />
           </div>
-
-          <!-- 1.2 Section element -->
-
-          <div class="element">
-            <div class="element__img">
-              <img
-                src="./src/img/stretching_adj.jpg"
-                alt="stretching exercises"
-              />
-            </div>
-            <div class="element__desc">
-              <div class="element__desc__header">intermediate level</div>
-              <div class="element__desc__title">stretching exercises</div>
-              <div class="element__desc__article">
-                <p>
-                  Obviously, if you are working out, stretching can do your body
-                  wonders. After exercising, your muscles may feel tight.
-                </p>
-              </div>
-              <div class="element__desc__link">
-                view workouts
-                <i class="icon-right-open"></i>
-              </div>
-            </div>
+          <div class="item__date">
+            <i class="icon-clock"></i>14 August, Monday, 10:45 am - 12:45 pm
+            2h
           </div>
-
-          <!-- 1.3 Section element -->
-
-          <div class="element">
-            <div class="element__img">
-              <img src="./src/img/aerobics_adj.jpg" alt="advanced level" />
-            </div>
-            <div class="element__desc">
-              <div class="element__desc__header">advanced level</div>
-              <div class="element__desc__title">aerobics program</div>
-              <div class="element__desc__article">
-                <p>
-                  Besides strengthening your heart and lungs, aerobic exercise
-                  can help lower your cholesterol, reduce your risk of type 2
-                  diabetes, improve your immune function, and lower your blood
-                  pressure.
-                </p>
-              </div>
-              <div class="element__desc__link">
-                view workouts
-                <i class="icon-right-open"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- 1.4 Section element -->
-
-          <div class="element">
-            <div class="element__img">
-              <img src="./src/img/abs_adj.jpg" alt="advanced level" />
-            </div>
-            <div class="element__desc">
-              <div class="element__desc__header">advanced level</div>
-              <div class="element__desc__title">abs workout</div>
-              <div class="element__desc__article">
-                <p>
-                  Tone your way to a bikini body with the ABC workout. Shake up
-                  your workout routine with something that's fun! The ABC
-                  workout adds variety to your usual exercises.
-                </p>
-              </div>
-              <div class="element__desc__link">
-                view workouts
-                <i class="icon-right-open"></i>
-              </div>
-            </div>
+          <div class="item__desc">
+            <h2>Level 1 Yoga</h2>
+            <p>
+              While it is suitable for beginners, it is also for those working
+              with an injury (tell the teacher first) and more seasoned
+              practitioners.
+            </p>
           </div>
         </div>
-      </section>
+
+        <!--3.2 Schedule item   -->
+
+        <div class="item">
+          <div class="item__img">
+            <img src="./src/img/stretching.jpg" />
+          </div>
+          <div class="item__date">
+            <i class="icon-clock"></i>14 August, Monday, 10:45 am - 12:45 pm
+            2h
+          </div>
+          <div class="item__desc">
+            <h2>Stretching</h2>
+            <p>
+              Improve the flexibility of your joints and muscles with our
+              stretch classes. Our experienced fitness instructors will lead
+              you through a series of stretches.
+            </p>
+          </div>
+        </div>
+
+        <!--3.3 Schedule item   -->
+
+        <div class="item">
+          <div class="item__img">
+            <img src="./src/img/yoga.jpg" />
+          </div>
+          <div class="item__date">
+            <i class="icon-clock"></i>14 August, Monday, 10:45 am - 12:45 pm
+            2h
+          </div>
+          <div class="item__desc">
+            <h2>Level 2 Yoga</h2>
+            <p>
+              Level 2 classes, assume a working knowledge of yoga. It might
+              proceed a little bit quicker but time will still be spent
+              working in each pose.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- 2. Section Transformation-->
+  <!--4 joinUs Section   -->
 
-    <section class="transformation" id="transformation">
-      <div class="element">
-        <div class="element__header">Revolutionize your body and soul!</div>
-        <div class="element__title">body transformation</div>
-        <div class="element__article">
-          <!-- 2.1 Section item  -->
+  <section class="joinUs">
+    <div class="item">
+      <div class="item__title">
+        <h2>
+          If you had a bad day, don`t worry. <br />
+          Make it better going to the gym!
+        </h2>
+      </div>
+      <div class="item__desc">
+        <p>
+          We all have the same amount of hours in our day. Deciding how to use
+          your hours is up to you.
+        </p>
+      </div>
+      <div class="item__button">
+        <button>join us</button>
+      </div>
+    </div>
+  </section>
 
-          <div class="item">
-            <div class="item__title">
-              <h2>01.</h2>
-              <span>Workout</span>
-            </div>
-            <div class="item__article">
-              <p>
-                Physical exercise is any bodily activity that enhances or
-                maintains physical fitness and overall health and wellness.
-              </p>
+  <!--5 ourTeam Section   -->
+
+  <section class="ourTeam" id="ourTeam">
+    <div class="container">
+      <div class="ourTeam__title">
+        <h2>our team</h2>
+        <p>
+          Choose your favorite class and start now. Remember, the only bad
+          workout is the one you didn’t do!
+        </p>
+      </div>
+      <div class="ourTeam__elements">
+        <!--5.1 ourTeam item   -->
+
+        <div class="item">
+          <div class="item__img">
+            <img src="./src/img/out_team/trainer1.jpeg" alt="trainer" />
+          </div>
+          <div class="item__name">
+            <h2>
+              Barbara Perkins
+            </h2>
+          </div>
+          <div class="item__social">
+            <p>
+              Fitness Trainer
+            </p>
+            <div class="item__social__icons">
+              <i class="icon-facebook"></i>
+              <i class="icon-twitter"></i>
+              <i class="icon-instagram"></i>
             </div>
           </div>
+        </div>
+        <!--5.2 ourTeam item   -->
 
-          <!-- 2.2 Section item  -->
-
-          <div class="item">
-            <div class="item__title">
-              <h2>02.</h2>
-              <span>Spinning</span>
-            </div>
-            <div class="item__article">
-              <p>
-                The average Spinning class burns an average of 500 calories,
-                which can bring unprecedented results.
-              </p>
+        <div class="item">
+          <div class="item__img">
+            <img src="./src/img/out_team/trainer1a.png" alt="trainer" />
+          </div>
+          <div class="item__name">
+            <h2>
+              Lauren Lewis
+            </h2>
+          </div>
+          <div class="item__social">
+            <p>
+              Fitness Trainer
+            </p>
+            <div class="item__social__icons">
+              <i class="icon-facebook"></i>
+              <i class="icon-twitter"></i>
+              <i class="icon-instagram"></i>
             </div>
           </div>
+        </div>
+        <!--5.3 ourTeam item   -->
 
-          <!-- 2.3 Section item  -->
-
-          <div class="item">
-            <div class="item__title">
-              <h2>03.</h2>
-              <span>Pilates</span>
-            </div>
-            <div class="item__article">
-              <p>
-                My Pilates classes give you an opportunity to train your mind
-                and not only your muscles. Try it today!
-              </p>
-            </div>
+        <div class="item">
+          <div class="item__img">
+            <img src="./src/img/out_team/trainer2a.png" alt="trainer" />
           </div>
-
-          <!-- 2.4 Section item  -->
-
-          <div class="item">
-            <div class="item__title">
-              <h2>04.</h2>
-              <span>Core training</span>
-            </div>
-            <div class="item__article">
-              <p>
-                Core training is the training of muscles. Special groups of
-                muscles are gradually loaded for strength improvement.
-              </p>
+          <div class="item__name">
+            <h2>
+              Teresa Fernandez
+            </h2>
+          </div>
+          <div class="item__social">
+            <p>
+              Fitness Trainer
+            </p>
+            <div class="item__social__icons">
+              <i class="icon-facebook"></i>
+              <i class="icon-twitter"></i>
+              <i class="icon-instagram"></i>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- 6. Section Price -->
+  <section class="priceList" id="courses">
+    <div class="container">
+      <div class="priceList__title">
+        <h2>
+          our price list of courses
+        </h2>
+        <p>
+          Cheapest Price List
+        </p>
+      </div>
+      <div class="price">
+        <!-- 6.1 Section element -->
+        <div class="item">
+          <div class="item__title">1 month membership</div>
+          <div class="item__price">$119</div>
+          <ul class="item__desc">
+            <li>Free gym membership</li>
+            <li>Diet plan</li>
+            <li>Over 25 additional classes</li>
+            <li>Personal training</li>
+          </ul>
+          <div class="item__button">
+            <button data-price="119">buy now</button>
+          </div>
+        </div>
+        <!-- 6.2 Section element -->
+        <div class="item">
+          <div class="item__title">3 month membership</div>
+          <div class="item__price">$269</div>
+          <ul class="item__desc">
+            <li>Free gym membership</li>
+            <li>Diet plan</li>
+            <li>Over 25 additional classes</li>
+            <li>Personal training</li>
+          </ul>
+          <div class="item__button">
+            <button data-price="269">buy now</button>
+          </div>
+        </div>
+        <!-- 6.3 Section element -->
+        <div class="item">
+          <div class="item__title">6 months membership</div>
+          <div class="item__price">$379</div>
+          <ul class="item__desc">
+            <li>Free gym membership</li>
+            <li>Diet plan</li>
+            <li>Over 25 additional classes</li>
+            <li>Personal training</li>
+          </ul>
+          <div class="item__button">
+            <button data-price="379">buy now</button>
+          </div>
+        </div>
+        <!-- 6.4 Section element -->
+        <div class="item">
+          <div class="item__title">12 months membership</div>
+          <div class="item__price">$499</div>
+          <ul class="item__desc">
+            <li>Free gym membership</li>
+            <li>Diet plan</li>
+            <li>Over 25 additional classes</li>
+            <li>Personal training</li>
+          </ul>
+          <div class="item__button">
+            <button data-price="499">buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="modal">
+    <section class="window">
+      <div class="window__title">
+        <h2>Request a Callback</h2>
+        <p>We can call you in 30 seconds, just enter your number below</p>
+      </div>
     </section>
+  </section>
+  <!-- footer -->
 
-    <!-- 3. Section Schedule -->
-
-    <section class="schedule" id="schedule">
+  <footer class="footer">
+    <div class="footer__top">
       <div class="container">
-        <div class="schedule__title">
-          <h2>class timing schedule</h2>
-          <p>
-            Choose your favorite class and start now. Remember, the only bad
-            workout is the one you didn’t do!
-          </p>
+        <!-- footer item -->
+        <div class="item">
+          <div class="item__title">
+            <h2>about us</h2>
+          </div>
+          <div class="item__desc">
+            <p>
+              Welcome to Fitnesto, the leading provider of community leisure
+              facilities and active opportunities. Whether you visit us for
+              fitness or functions, training or treatments, eating out or
+              entertainment, we put your health and well-being at the heart of
+              everything we do.
+            </p>
+          </div>
         </div>
-        <div class="schedule__elements">
-          <!--3.1 Schedule item   -->
 
-          <div class="item">
-            <div class="item__img">
-              <img src="./src/img/aerobics.jpg" />
-            </div>
-            <div class="item__date">
-              <i class="icon-clock"></i>14 August, Monday, 10:45 am - 12:45 pm
-              2h
-            </div>
-            <div class="item__desc">
-              <h2>Level 1 Yoga</h2>
-              <p>
-                While it is suitable for beginners, it is also for those working
-                with an injury (tell the teacher first) and more seasoned
-                practitioners.
-              </p>
-            </div>
+        <!-- footer item -->
+        <div class="item">
+          <div class="item__title">
+            <h2>navigation</h2>
           </div>
-
-          <!--3.2 Schedule item   -->
-
-          <div class="item">
-            <div class="item__img">
-              <img src="./src/img/stretching.jpg" />
-            </div>
-            <div class="item__date">
-              <i class="icon-clock"></i>14 August, Monday, 10:45 am - 12:45 pm
-              2h
-            </div>
-            <div class="item__desc">
-              <h2>Stretching</h2>
-              <p>
-                Improve the flexibility of your joints and muscles with our
-                stretch classes. Our experienced fitness instructors will lead
-                you through a series of stretches.
-              </p>
-            </div>
+          <div class="item__desc">
+            <ul class="navigation">
+              <li><a href="#workouts">workouts</a></li>
+              <li><a href="#transformation">body transformation</a></li>
+              <li><a href="#schedule">schedule</a></li>
+              <li><a href="#joinUs">join us</a></li>
+              <li><a href="#courses">list of courses</a></li>
+            </ul>
           </div>
-
-          <!--3.3 Schedule item   -->
-
-          <div class="item">
-            <div class="item__img">
-              <img src="./src/img/yoga.jpg" />
-            </div>
-            <div class="item__date">
-              <i class="icon-clock"></i>14 August, Monday, 10:45 am - 12:45 pm
-              2h
-            </div>
-            <div class="item__desc">
-              <h2>Level 2 Yoga</h2>
-              <p>
-                Level 2 classes, assume a working knowledge of yoga. It might
-                proceed a little bit quicker but time will still be spent
-                working in each pose.
-              </p>
-            </div>
+        </div>
+        <!-- footer item -->
+        <div class="item">
+          <div class="item__title">
+            <h2>contact information</h2>
+          </div>
+          <div class="item__desc">
+            <p>
+              4096 N Highland St, Arlington, VA 32101, USA
+            </p>
+            <a class="mail" href="mailto:fialek85@gmail.com">fialek85@gmail.com</a>
+          </div>
+        </div>
+        <!-- footer item -->
+        <div class="item">
+          <div class="item__title">
+            <h2>we are open</h2>
+          </div>
+          <div class="item__desc">
+            <ul class="hours">
+              <li>Mon-Thu: 9:30 - 21:00</li>
+              <li>Fri: 6:00 - 21:00</li>
+              <li>Sat: 10:00 - 15:00</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-
-    <!--4 joinUs Section   -->
-
-    <section class="joinUs">
-      <div class="item">
-        <div class="item__title">
-          <h2>
-            If you had a bad day, don`t worry. <br />
-            Make it better going to the gym!
-          </h2>
-        </div>
-        <div class="item__desc">
-          <p>
-            We all have the same amount of hours in our day. Deciding how to use
-            your hours is up to you.
-          </p>
-        </div>
-        <div class="item__button">
-          <button>join us</button>
-        </div>
-      </div>
-    </section>
-
-    <!--5 ourTeam Section   -->
-
-    <section class="ourTeam" id="ourTeam">
+    </div>
+    <div class="footer__bottom">
       <div class="container">
-        <div class="ourTeam__title">
-          <h2>our team</h2>
-          <p>
-            Choose your favorite class and start now. Remember, the only bad
-            workout is the one you didn’t do!
-          </p>
-        </div>
-        <div class="ourTeam__elements">
-          <!--5.1 ourTeam item   -->
-
-          <div class="item">
-            <div class="item__img">
-              <img src="./src/img/out_team/trainer1.jpeg" alt="trainer" />
-            </div>
-            <div class="item__name">
-              <h2>
-                Barbara Perkins
-              </h2>
-            </div>
-            <div class="item__social">
-              <p>
-                Fitness Trainer
-              </p>
-              <div class="item__social__icons">
-                <i class="icon-facebook"></i>
-                <i class="icon-twitter"></i>
-                <i class="icon-instagram"></i>
-              </div>
-            </div>
-          </div>
-          <!--5.2 ourTeam item   -->
-
-          <div class="item">
-            <div class="item__img">
-              <img src="./src/img/out_team/trainer1a.png" alt="trainer" />
-            </div>
-            <div class="item__name">
-              <h2>
-                Lauren Lewis
-              </h2>
-            </div>
-            <div class="item__social">
-              <p>
-                Fitness Trainer
-              </p>
-              <div class="item__social__icons">
-                <i class="icon-facebook"></i>
-                <i class="icon-twitter"></i>
-                <i class="icon-instagram"></i>
-              </div>
-            </div>
-          </div>
-          <!--5.3 ourTeam item   -->
-
-          <div class="item">
-            <div class="item__img">
-              <img src="./src/img/out_team/trainer2a.png" alt="trainer" />
-            </div>
-            <div class="item__name">
-              <h2>
-                Teresa Fernandez
-              </h2>
-            </div>
-            <div class="item__social">
-              <p>
-                Fitness Trainer
-              </p>
-              <div class="item__social__icons">
-                <i class="icon-facebook"></i>
-                <i class="icon-twitter"></i>
-                <i class="icon-instagram"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p>© Maciej Fiałkowski <span>2019 r. </span></p>
       </div>
-    </section>
-    <!-- 6. Section Price -->
-    <section class="priceList" id="courses">
-      <div class="container">
-        <div class="priceList__title">
-          <h2>
-            our price list of courses
-          </h2>
-          <p>
-            Cheapest Price List
-          </p>
-        </div>
-        <div class="price">
-          <!-- 6.1 Section element -->
-          <div class="item">
-            <div class="item__title">1 month membership</div>
-            <div class="item__price">$119</div>
-            <ul class="item__desc">
-              <li>Free gym membership</li>
-              <li>Diet plan</li>
-              <li>Over 25 additional classes</li>
-              <li>Personal training</li>
-            </ul>
-            <div class="item__button">
-              <button>buy now</button>
-            </div>
-          </div>
-          <!-- 6.2 Section element -->
-          <div class="item">
-            <div class="item__title">3 month membership</div>
-            <div class="item__price">$269</div>
-            <ul class="item__desc">
-              <li>Free gym membership</li>
-              <li>Diet plan</li>
-              <li>Over 25 additional classes</li>
-              <li>Personal training</li>
-            </ul>
-            <div class="item__button">
-              <button>buy now</button>
-            </div>
-          </div>
-          <!-- 6.3 Section element -->
-          <div class="item">
-            <div class="item__title">6 months membership</div>
-            <div class="item__price">$379</div>
-            <ul class="item__desc">
-              <li>Free gym membership</li>
-              <li>Diet plan</li>
-              <li>Over 25 additional classes</li>
-              <li>Personal training</li>
-            </ul>
-            <div class="item__button">
-              <button>buy now</button>
-            </div>
-          </div>
-          <!-- 6.4 Section element -->
-          <div class="item">
-            <div class="item__title">12 months membership</div>
-            <div class="item__price">$499</div>
-            <ul class="item__desc">
-              <li>Free gym membership</li>
-              <li>Diet plan</li>
-              <li>Over 25 additional classes</li>
-              <li>Personal training</li>
-            </ul>
-            <div class="item__button">
-              <button>buy now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer -->
+    </div>
+  </footer>
 
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="container">
-          <!-- footer item -->
-          <div class="item">
-            <div class="item__title">
-              <h2>about us</h2>
-            </div>
-            <div class="item__desc">
-              <p>
-                Welcome to Fitnesto, the leading provider of community leisure
-                facilities and active opportunities. Whether you visit us for
-                fitness or functions, training or treatments, eating out or
-                entertainment, we put your health and well-being at the heart of
-                everything we do.
-              </p>
-            </div>
-          </div>
+  <script src="./src/js/index.js"></script>
+</body>
 
-          <!-- footer item -->
-          <div class="item">
-            <div class="item__title">
-              <h2>navigation</h2>
-            </div>
-            <div class="item__desc">
-              <ul class="navigation">
-                <li><a href="#workouts">workouts</a></li>
-                <li><a href="#transformation">body transformation</a></li>
-                <li><a href="#schedule">schedule</a></li>
-                <li><a href="#joinUs">join us</a></li>
-                <li><a href="#courses">list of courses</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- footer item -->
-          <div class="item">
-            <div class="item__title">
-              <h2>contact information</h2>
-            </div>
-            <div class="item__desc">
-              <p>
-                4096 N Highland St, Arlington, VA 32101, USA
-              </p>
-              <a class="mail" href="mailto:fialek85@gmail.com"
-                >fialek85@gmail.com</a
-              >
-            </div>
-          </div>
-          <!-- footer item -->
-          <div class="item">
-            <div class="item__title">
-              <h2>we are open</h2>
-            </div>
-            <div class="item__desc">
-              <ul class="hours">
-                <li>Mon-Thu: 9:30 - 21:00</li>
-                <li>Fri: 6:00 - 21:00</li>
-                <li>Sat: 10:00 - 15:00</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <p>© Maciej Fiałkowski <span>2019 r. </span></p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./src/js/index.js"></script>
-  </body>
 </html>
