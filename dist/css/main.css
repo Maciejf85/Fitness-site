@@ -463,7 +463,6 @@ section.joinUs {
           background-size: cover;
   background-attachment: fixed;
   margin-top: 100px;
-  margin-bottom: 50px;
   position: relative; }
   section.joinUs .item {
     display: -webkit-box;
@@ -828,11 +827,23 @@ section.joinUs {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
+      @media (min-width: 641px) and (max-width: 959px) {
+        .timetable .element__items {
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
     .timetable .element .item {
       width: 32%;
       font-size: 1.6rem;
       text-align: left;
       margin: 5px; }
+      @media (min-width: 641px) and (max-width: 959px) {
+        .timetable .element .item {
+          width: 50%; } }
+      @media (max-width: 640px) {
+        .timetable .element .item {
+          width: 100%; } }
       .timetable .element .item__title {
         font-weight: 600;
         font-family: "Exo 2", sans-serif;
