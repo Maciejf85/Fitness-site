@@ -827,12 +827,6 @@ section.joinUs {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
-      @media (min-width: 641px) and (max-width: 959px) {
-        .timetable .element__items {
-          -webkit-box-pack: center;
-          -webkit-justify-content: center;
-              -ms-flex-pack: center;
-                  justify-content: center; } }
     .timetable .element .item {
       width: 32%;
       font-size: 1.6rem;
@@ -840,7 +834,7 @@ section.joinUs {
       margin: 5px; }
       @media (min-width: 641px) and (max-width: 959px) {
         .timetable .element .item {
-          width: 50%; } }
+          width: 48%; } }
       @media (max-width: 640px) {
         .timetable .element .item {
           width: 100%; } }
