@@ -1,4 +1,5 @@
-button {
+button,
+input[type="submit"] {
   text-transform: uppercase;
   width: 146px;
   height: 60px;
@@ -18,4 +19,7 @@ button {
     color: $color-primary;
     cursor: pointer;
   }
+}
+input[type="submit"] {
+  margin-top: 10px;
 }
