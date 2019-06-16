@@ -17,6 +17,11 @@ const closeButton = document.querySelector(".closeButton");
 const showHideModal = e => {
   modalWindow.classList.toggle("display");
   modalWindow.classList.toggle("modalActive");
+  const name = document.querySelector('input[type="text"]');
+  const phone = document.querySelector('input[type="tel"]');
+  name.value = null;
+  phone.value = null;
+  formResponse.innerHTML = null;
 };
 
 // Join us click event
@@ -33,7 +38,7 @@ if (submitButton) {
     if (name.value.length !== 0 && phone.value.length !== 0) {
       formResponse.style.color = "hsl(356, 52%, 100%)";
       formResponse.innerHTML = "Request sended ";
-      setTimeout(() => showHideModal(), 1300);
+      setTimeout(() => showHideModal(), 1100);
     } else {
       formResponse.style.color = "hsl(356, 52%, 44%)";
       formResponse.innerHTML = "Fill in the form";
@@ -50,16 +55,16 @@ joinButton.addEventListener("click", showHideModal);
 // Top button
 let h = window.innerHeight;
 
-menuButton.addEventListener("click", function () {
+menuButton.addEventListener("click", function() {
   navList.classList.toggle("mobile_menu");
   const elements = this.querySelectorAll("div");
   navList.classList.length > 1
     ? elements.forEach(item => {
-      item.classList.toggle("change");
-    })
+        item.classList.toggle("change");
+      })
     : elements.forEach(item => {
-      item.classList.toggle("change");
-    });
+        item.classList.toggle("change");
+      });
 });
 
 const position = window.addEventListener("scroll", () => {
