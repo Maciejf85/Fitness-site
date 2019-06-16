@@ -22,9 +22,6 @@
     &__items {
       display: flex;
       flex-wrap: wrap;
-      @include tablet {
-        justify-content: center;
-      }
     }
     .item {
       width: 32%;
@@ -32,7 +29,7 @@
       text-align: left;
       margin: 5px;
       @include tablet {
-        width: 50%;
+        width: 48%;
       }
       @include mobile {
         width: 100%;

@@ -16,6 +16,7 @@
     <!-- Site title -->
     <title>Fitness site</title>
   </head>
+
   <body>
     <!-- Navigation -->
     <nav class="nav white">
@@ -43,7 +44,9 @@
 
     <!-- Main image -->
     <div class="programs">
-      <div class="programs__text"><h1>programs</h1></div>
+      <div class="programs__text">
+        <h1>programs</h1>
+      </div>
     </div>
     <!-- Section Timetable -->
     <section class="timetable" id="timetable">
@@ -59,7 +62,9 @@
 
         <!-- Monday -->
         <div class="element">
-          <div class="element__title"><h2>monday</h2></div>
+          <div class="element__title">
+            <h2>monday</h2>
+          </div>
           <div class="element__items">
             <!-- item 1 -->
             <div class="item">
@@ -141,7 +146,9 @@
 
         <!-- Tuesday -->
         <div class="element">
-          <div class="element__title"><h2>tuesday</h2></div>
+          <div class="element__title">
+            <h2>tuesday</h2>
+          </div>
           <div class="element__items">
             <!-- item 1 -->
             <div class="item">
@@ -192,7 +199,9 @@
 
         <!-- Wednesday -->
         <div class="element">
-          <div class="element__title"><h2>wednesday</h2></div>
+          <div class="element__title">
+            <h2>wednesday</h2>
+          </div>
           <div class="element__items">
             <!-- item 1 -->
             <div class="item">
@@ -243,7 +252,9 @@
 
         <!-- Thursday -->
         <div class="element">
-          <div class="element__title"><h2>thursday</h2></div>
+          <div class="element__title">
+            <h2>thursday</h2>
+          </div>
           <div class="element__items">
             <!-- item 1 -->
             <div class="item">
@@ -293,7 +304,9 @@
         </div>
         <!-- Friday -->
         <div class="element">
-          <div class="element__title"><h2>friday</h2></div>
+          <div class="element__title">
+            <h2>friday</h2>
+          </div>
           <div class="element__items">
             <!-- item 1 -->
             <div class="item">
@@ -343,7 +356,9 @@
         </div>
         <!-- saturday -->
         <div class="element">
-          <div class="element__title"><h2>saturday</h2></div>
+          <div class="element__title">
+            <h2>saturday</h2>
+          </div>
           <div class="element__items">
             <!-- item 1 -->
             <div class="item">
@@ -415,7 +430,24 @@
         </div>
       </div>
     </section>
-
+    <!-- Modal window -->
+    <section class="modal">
+      <section class="window">
+        <div class="window__title">
+          <h2>Request a Callback</h2>
+          <p>We can call you in 30 seconds, just enter your number below</p>
+        </div>
+        <div class="window__form">
+          <form action="">
+            <input type="text" placeholder="Name *" />
+            <input type="tel" placeholder="Phone *" />
+            <div class="response"></div>
+            <input type="submit" id="submit" value="request" />
+          </form>
+        </div>
+        <div class="closeButton"></div>
+      </section>
+    </section>
     <!-- footer -->
     <footer class="footer">
       <div class="footer__top">
@@ -433,22 +465,6 @@
                 entertainment, we put your health and well-being at the heart of
                 everything we do.
               </p>
-            </div>
-          </div>
-
-          <!-- footer item -->
-          <div class="item">
-            <div class="item__title">
-              <h2>navigation</h2>
-            </div>
-            <div class="item__desc">
-              <ul class="navigation">
-                <li><a href="#workouts">workouts</a></li>
-                <li><a href="#transformation">body transformation</a></li>
-                <li><a href="#schedule">schedule</a></li>
-                <li><a href="#joinUs">join us</a></li>
-                <li><a href="#courses">list of courses</a></li>
-              </ul>
             </div>
           </div>
 
@@ -488,6 +504,6 @@
       </div>
     </footer>
 
-    <script src="./src/js/index.js"></script>
+    <script src="./dist/js/index.js"></script>
   </body>
 </html>

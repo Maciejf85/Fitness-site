@@ -11,6 +11,7 @@
 @import "./sections/MainPage/priceList";
 @import "./sections/programs/timeTable";
 @import "./sections/footer";
+@import "./modal";
 
 * {
   box-sizing: border-box;
@@ -248,22 +249,22 @@ a {
     }
   }
 }
+.show,
+.hide {
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
 // Top button show animation
 .show {
   animation-name: slideUp;
   animation-duration: 0.6s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
   display: block;
 }
 // Top button hide animation
 .hide {
   animation-name: slideDown;
   animation-duration: 0.4s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
 }
 // Navigation active
 .active {
@@ -340,4 +341,7 @@ a {
   &:hover {
     cursor: pointer;
   }
+}
+.display {
+  display: block;
 }

@@ -6,20 +6,20 @@ var autoprefixer = require("gulp-autoprefixer");
 // let rename = require("gulp-rename");
 let uglify = require("gulp-uglify-es").default;
 
-gulp.task("reload", function() {
+gulp.task("reload", function () {
   browserSync.reload();
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", function () {
   browserSync({
     server: "./"
   });
 
   gulp.watch("./*.html", ["reload"]);
-  gulp.watch("./src/js/*.js", ["reload"]);
+  gulp.watch("./src/js/*.js", ["reload", 'uglify']);
 });
 
-gulp.task("sass", function() {
+gulp.task("sass", function () {
   return (
     gulp
       .src("src/scss/main.scss")
@@ -27,7 +27,7 @@ gulp.task("sass", function() {
       .pipe(
         sass({
           errLogToConsole: true,
-          outputStyle: "nested" //nested, expanded, compact, compressed.
+          outputStyle: "compressed" //nested, expanded, compact, compressed.
         })
       )
       // .pipe(sourcemaps.write())
@@ -41,13 +41,13 @@ gulp.task("sass", function() {
   );
 });
 
-gulp.task("watch", ["sass", "serve"], function() {
-  gulp.watch("src/scss/**/*.scss", ["sass"]);
+gulp.task("watch", ["sass", "serve", 'uglify'], function () {
+  gulp.watch("src/scss/**/*.scss", ["sass", 'uglify']);
 });
 
 // minifikacja javascript ===> gulp js
 
-gulp.task("uglify", function() {
+gulp.task("uglify", function () {
   return (
     gulp
       .src("./src/js/**/*.js")
@@ -61,7 +61,7 @@ gulp.task("uglify", function() {
 // 2. npm i -D gulp gulp-sass browser-sync gulp-sourcemaps gulp-autoprefixer gulp-uglify-es
 
 // 3. gulp watch
-// 4. gulp js
+// 4. gulp uglify
 
 // (npm install --save-dev) ===> npm i -D
 

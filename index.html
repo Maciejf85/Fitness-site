@@ -16,6 +16,7 @@
     <!-- Site title -->
     <title>Fitness site</title>
   </head>
+
   <body>
     <!-- Navigation -->
 
@@ -45,7 +46,9 @@
 
     <!-- Main image -->
     <div class="main">
-      <div class="main__text"><h1>women fitness</h1></div>
+      <div class="main__text">
+        <h1>women fitness</h1>
+      </div>
     </div>
 
     <!-- 1. Section Workout -->
@@ -426,7 +429,7 @@
               <li>Personal training</li>
             </ul>
             <div class="item__button">
-              <button>buy now</button>
+              <button data-price="119">buy now</button>
             </div>
           </div>
           <!-- 6.2 Section element -->
@@ -440,7 +443,7 @@
               <li>Personal training</li>
             </ul>
             <div class="item__button">
-              <button>buy now</button>
+              <button data-price="269">buy now</button>
             </div>
           </div>
           <!-- 6.3 Section element -->
@@ -454,7 +457,7 @@
               <li>Personal training</li>
             </ul>
             <div class="item__button">
-              <button>buy now</button>
+              <button data-price="379">buy now</button>
             </div>
           </div>
           <!-- 6.4 Section element -->
@@ -468,11 +471,29 @@
               <li>Personal training</li>
             </ul>
             <div class="item__button">
-              <button>buy now</button>
+              <button data-price="499">buy now</button>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- Modal window -->
+    <section class="modal">
+      <section class="window">
+        <div class="window__title">
+          <h2>Request a Callback</h2>
+          <p>We can call you in 30 seconds, just enter your number below</p>
+        </div>
+        <div class="window__form">
+          <form action="">
+            <input type="text" placeholder="Name *" />
+            <input type="tel" placeholder="Phone *" />
+            <div class="response"></div>
+            <input type="submit" id="submit" value="request" />
+          </form>
+        </div>
+        <div class="closeButton"></div>
+      </section>
     </section>
     <!-- footer -->
 
@@ -546,6 +567,6 @@
       </div>
     </footer>
 
-    <script src="./src/js/index.js"></script>
+    <script src="./dist/js/index.js"></script>
   </body>
 </html>
