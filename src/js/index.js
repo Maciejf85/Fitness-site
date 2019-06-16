@@ -4,16 +4,20 @@ const modalWindow = document.querySelector(".modal");
 
 const navList = document.querySelector(".nav__list");
 
+//  form vars
 const submitButton = document.getElementById("submit");
+const formResponse = document.querySelector(".response");
 
 // modal window
 const buttons = document.querySelectorAll(".priceList  button");
+const joinButton = document.querySelector(".joinUs button");
+const closeButton = document.querySelector(".closeButton");
+
+// close modal
 
 const showHideModal = e => {
   modalWindow.classList.toggle("display");
-
   modalWindow.classList.toggle("modalActive");
-  modalWindow.classList.toggle("modalNotActive");
 };
 
 // Join us click event
@@ -21,17 +25,28 @@ if (buttons.length !== 0) {
   buttons.forEach(item => item.addEventListener("click", showHideModal));
 }
 // Submit button event
-submitButton.addEventListener("click", e => {
-  e.preventDefault();
-  const name = document.querySelector('input[type="text"]');
-  const phone = document.querySelector('input[type="tel"]');
+if (submitButton) {
+  submitButton.addEventListener("click", e => {
+    e.preventDefault();
+    const name = document.querySelector('input[type="text"]');
+    const phone = document.querySelector('input[type="tel"]');
 
-  if (name.value.length !== 0 && phone.value.length !== 0) {
-    showHideModal();
-  } else {
-    console.log("empty fields");
-  }
-});
+    if (name.value.length !== 0 && phone.value.length !== 0) {
+      formResponse.style.color = "hsl(356, 52%, 100%)";
+      formResponse.innerHTML = "Request sended ";
+      setTimeout(() => showHideModal(), 1200);
+    } else {
+      formResponse.style.color = "hsl(356, 52%, 44%)";
+      formResponse.innerHTML = "Fill in the form";
+    }
+  });
+}
+// close modal button
+if (closeButton) {
+  closeButton.addEventListener("click", showHideModal);
+}
+// join button
+joinButton.addEventListener("click", showHideModal);
 
 // Top button
 let h = window.innerHeight;

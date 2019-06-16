@@ -53,17 +53,22 @@
         color: white;
       }
     }
+
+    .response {
+      width: 100%;
+      height: 30px;
+      font-family: $open-sans;
+      color: white;
+      text-align: left;
+      line-height: 30px;
+      font-size: 1.6rem;
+      font-style: italic;
+    }
   }
 }
 
 .modalActive {
   animation-name: fadeIn;
-  animation-delay: 0.3s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-.modalNotActive {
-  animation-name: fadeOut;
   animation-delay: 0.3s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
