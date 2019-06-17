@@ -26,6 +26,7 @@
     min-height: 100vh;
   }
   @include tablet {
+    position: fixed;
     width: 100vw;
     min-height: 100vh;
   }
@@ -42,6 +43,9 @@
       background: white;
     }
     @include mobile {
+      margin: 0;
+    }
+    @include tablet {
       margin: 0;
     }
   }
