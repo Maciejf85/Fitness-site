@@ -6,20 +6,20 @@ var autoprefixer = require("gulp-autoprefixer");
 // let rename = require("gulp-rename");
 let uglify = require("gulp-uglify-es").default;
 
-gulp.task("reload", function () {
+gulp.task("reload", function() {
   browserSync.reload();
 });
 
-gulp.task("serve", function () {
+gulp.task("serve", function() {
   browserSync({
     server: "./"
   });
 
   gulp.watch("./*.html", ["reload"]);
-  gulp.watch("./src/js/*.js", ["reload", 'uglify']);
+  gulp.watch("./src/js/*.js", ["reload", "uglify"]);
 });
 
-gulp.task("sass", function () {
+gulp.task("sass", function() {
   return (
     gulp
       .src("src/scss/main.scss")
@@ -41,13 +41,13 @@ gulp.task("sass", function () {
   );
 });
 
-gulp.task("watch", ["sass", "serve", 'uglify'], function () {
-  gulp.watch("src/scss/**/*.scss", ["sass", 'uglify']);
+gulp.task("watch", ["sass", "serve", "uglify"], function() {
+  gulp.watch("src/scss/**/*.scss", ["sass", "uglify"]);
 });
 
-// minifikacja javascript ===> gulp js
+// minifikacja javascript ===> gulp uglify
 
-gulp.task("uglify", function () {
+gulp.task("uglify", function() {
   return (
     gulp
       .src("./src/js/**/*.js")
