@@ -4,6 +4,9 @@ const modalWindow = document.querySelector(".modal");
 
 const navList = document.querySelector(".nav__list");
 
+//  images
+const images = document.querySelectorAll(".item > img");
+console.log(images);
 //  form vars
 const submitButton = document.getElementById("submit");
 const formResponse = document.querySelector(".response");
@@ -50,7 +53,9 @@ if (closeButton) {
   closeButton.addEventListener("click", showHideModal);
 }
 // join button
-joinButton.addEventListener("click", showHideModal);
+if (joinButton) {
+  joinButton.addEventListener("click", showHideModal);
+}
 
 // Top button
 let h = window.innerHeight;
