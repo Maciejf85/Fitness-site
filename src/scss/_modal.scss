@@ -20,6 +20,16 @@
   background: $color-primary;
   color: white;
   font-size: 3rem;
+  @include mobile {
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  @include tablet {
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+  }
   @include section_title;
   &__title {
     margin: 20px 0;
@@ -31,6 +41,12 @@
     }
     &::before {
       background: white;
+    }
+    @include mobile {
+      margin: 0;
+    }
+    @include tablet {
+      margin: 0;
     }
   }
   &__form {
@@ -49,6 +65,12 @@
       outline: none;
       color: white;
       padding: 17px 22px;
+      @include mobile {
+        padding: 17px;
+        font-size: 1.5rem;
+        margin: 5px 0;
+      }
+
       &::placeholder {
         color: white;
       }
@@ -63,6 +85,11 @@
       line-height: 30px;
       font-size: 1.6rem;
       font-style: italic;
+      @include mobile {
+        height: 15px;
+        line-height: 15px;
+        font-size: 1.5rem;
+      }
     }
   }
 }

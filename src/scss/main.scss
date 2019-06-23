@@ -10,6 +10,7 @@
 @import "./sections/MainPage/ourTeam";
 @import "./sections/MainPage/priceList";
 @import "./sections/programs/timeTable";
+@import "./sections/gallery/gallery";
 @import "./sections/footer";
 @import "./modal";
 
@@ -51,6 +52,7 @@ a {
 }
 // Container
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -166,6 +168,7 @@ a {
     top: 0;
     left: 0;
     z-index: 9999;
+    padding: 0;
   }
 
   &__container {
@@ -218,6 +221,7 @@ a {
       list-style: none;
       justify-content: space-around;
       font-weight: 700;
+      padding: 0;
       @include mobile {
         display: none;
       }
