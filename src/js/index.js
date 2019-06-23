@@ -6,7 +6,7 @@ const navList = document.querySelector(".nav__list");
 
 //  images
 const images = document.querySelectorAll(".item > img");
-console.log(images);
+
 //  form vars
 const submitButton = document.getElementById("submit");
 const formResponse = document.querySelector(".response");
@@ -25,6 +25,17 @@ const showHideModal = e => {
   name.value = null;
   phone.value = null;
   formResponse.innerHTML = null;
+};
+//  showGallery function
+const showGallery = e => {
+  const pictures = [
+    "abs.jpg",
+    "aerobics.jpg",
+    "yoga4.jpg",
+    "yoga.jpg",
+    "yoga2.jpg",
+    "yoga3.jpg"
+  ];
 };
 
 // Join us click event
@@ -56,7 +67,10 @@ if (closeButton) {
 if (joinButton) {
   joinButton.addEventListener("click", showHideModal);
 }
-
+//  gallery modal
+if (images.length !== 0) {
+  images.forEach(item => item.addEventListener("click", showGallery));
+}
 // Top button
 let h = window.innerHeight;
 
