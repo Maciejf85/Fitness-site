@@ -1,3 +1,13 @@
+// Gallery items
+const pictures = [
+  "abs.jpg",
+  "aerobics.jpg",
+  "yoga4.jpg",
+  "yoga.jpg",
+  "yoga2.jpg",
+  "yoga3.jpg"
+];
+// Variables
 const topButton = document.querySelector(".top-button");
 const menuButton = document.querySelector(".hamburger");
 const modalWindow = document.querySelector(".modal");
@@ -16,10 +26,14 @@ const buttons = document.querySelectorAll(".priceList  button");
 const joinButton = document.querySelector(".joinUs button");
 const closeButton = document.querySelector(".closeButton");
 
-// close modal
-const showHideModal = e => {
+// show modal
+
+const openCloseModal = () => {
   modalWindow.classList.toggle("display");
   modalWindow.classList.toggle("modalActive");
+};
+const showHideModal = e => {
+  openCloseModal();
   const name = document.querySelector('input[type="text"]');
   const phone = document.querySelector('input[type="tel"]');
   name.value = null;
@@ -28,14 +42,8 @@ const showHideModal = e => {
 };
 //  showGallery function
 const showGallery = e => {
-  const pictures = [
-    "abs.jpg",
-    "aerobics.jpg",
-    "yoga4.jpg",
-    "yoga.jpg",
-    "yoga2.jpg",
-    "yoga3.jpg"
-  ];
+  openCloseModal();
+  console.log(e.target.dataset.number);
 };
 
 // Join us click event

@@ -22,3 +22,59 @@
     }
   }
 }
+.modal__gallery {
+  .gallery__item {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 600px;
+    border: 2px solid white;
+    background: #000;
+
+    .leftArrow {
+      position: absolute;
+      top: 50%;
+      left: -70px;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid white;
+      background: rgba(0, 0, 0, 0.589);
+      transition: 0.3s;
+      &:hover {
+        background: hsl(0, 0%, 20%);
+        cursor: pointer;
+      }
+    }
+    .rightArrow {
+      position: absolute;
+      top: 50%;
+      right: -70px;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid white;
+      background: rgba(0, 0, 0, 0.589);
+      transition: 0.3s;
+      &:hover {
+        background: hsl(0, 0%, 20%);
+        cursor: pointer;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2.5rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

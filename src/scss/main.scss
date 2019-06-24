@@ -3,6 +3,7 @@
 @import "./variables";
 @import "./buttons";
 @import "./animations";
+@import "./modal";
 @import "./sections/MainPage/workouts";
 @import "./sections/MainPage/transformation";
 @import "./sections/MainPage/schedule";
@@ -12,7 +13,6 @@
 @import "./sections/programs/timeTable";
 @import "./sections/gallery/gallery";
 @import "./sections/footer";
-@import "./modal";
 
 * {
   box-sizing: border-box;
