@@ -11,6 +11,12 @@
       height: 250px;
       margin: 10px;
       overflow: hidden;
+      @include tablet {
+        width: 45%;
+      }
+      @include mobile {
+        width: 65%;
+      }
       img {
         height: 100%;
         transition: 0.7s;
@@ -19,6 +25,67 @@
         transform: scale(1.3);
         cursor: pointer;
       }
+    }
+  }
+}
+.modal__gallery {
+  .gallery__item {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 533px;
+    border: 2px solid white;
+    background: #000;
+    @include tablet {
+      width: 500px;
+      height: 333px;
+    }
+
+    .leftArrow {
+      position: absolute;
+      top: 50%;
+      left: -100px;
+      transform: translateY(-50%);
+      width: 100px;
+      height: 100%;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        transform: translate(-10px, -50%);
+        i {
+          color: white;
+        }
+      }
+    }
+    .rightArrow {
+      position: absolute;
+      top: 50%;
+      right: -100px;
+      transform: translateY(-50%);
+      width: 100px;
+      height: 100%;
+      transition: 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        transform: translate(10px, -50%);
+        i {
+          color: white;
+        }
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: hsla(0, 0%, 100%, 0.603);
+      font-size: 4rem;
+    }
+    img {
+      width: 100%;
     }
   }
 }

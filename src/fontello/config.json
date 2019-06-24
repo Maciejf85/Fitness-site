@@ -41,6 +41,18 @@
       "css": "instagram",
       "code": 62253,
       "src": "entypo"
+    },
+    {
+      "uid": "ad6b3fbb5324abe71a9c0b6609cbb9f1",
+      "css": "right-big",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "555ef8c86832e686fef85f7af2eb7cde",
+      "css": "left-big",
+      "code": 59396,
+      "src": "fontawesome"
     }
   ]
 }
