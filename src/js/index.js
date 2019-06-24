@@ -28,6 +28,7 @@ const joinButton = document.querySelector(".joinUs button");
 const closeButton = document.querySelector(".closeButton");
 
 // show/exit modal , removeGallery
+
 const modalExit = e => {
   if (e.target.classList[0] === "modal") {
     const modalExist = document.querySelector(".gallery__item");
