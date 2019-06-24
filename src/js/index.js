@@ -53,7 +53,7 @@ const changePicture = e => {
     currentImg !== galleryLength ? currentImg++ : (currentImg = 0);
   }
 
-  image.setAttribute("src", `../../src/img/${pictures[currentImg]}`);
+  image.setAttribute("src", `./src/img/${pictures[currentImg]}`);
 };
 // add/remove Modal
 const openCloseModal = e => {
