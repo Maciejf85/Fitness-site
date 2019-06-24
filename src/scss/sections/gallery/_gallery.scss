@@ -36,33 +36,34 @@
     .leftArrow {
       position: absolute;
       top: 50%;
-      left: -70px;
+      left: -100px;
       transform: translateY(-50%);
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 1px solid white;
-      background: rgba(0, 0, 0, 0.589);
+      width: 100px;
+      height: 100%;
       transition: 0.3s;
       &:hover {
-        background: hsl(0, 0%, 20%);
         cursor: pointer;
+        transform: translate(-10px, -50%);
+        i {
+          color: white;
+        }
       }
     }
     .rightArrow {
       position: absolute;
       top: 50%;
-      right: -70px;
+      right: -100px;
       transform: translateY(-50%);
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 1px solid white;
-      background: rgba(0, 0, 0, 0.589);
+      width: 100px;
+      height: 100%;
       transition: 0.3s;
+
       &:hover {
-        background: hsl(0, 0%, 20%);
         cursor: pointer;
+        transform: translate(10px, -50%);
+        i {
+          color: white;
+        }
       }
     }
     i {
@@ -70,8 +71,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: white;
-      font-size: 2.5rem;
+      color: hsla(0, 0%, 100%, 0.603);
+      font-size: 4rem;
     }
     img {
       width: 100%;
