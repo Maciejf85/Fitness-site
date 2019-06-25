@@ -91,7 +91,7 @@ const showGallery = e => {
   rightIcon.classList.add("icon-right-big");
 
   // image url
-  image.setAttribute("src", `../../src/img/${pictures[picNumber]}`);
+  image.setAttribute("src", `./src/img/${pictures[picNumber]}`);
   image.setAttribute("alt", "picture");
 
   // arrow attributes
