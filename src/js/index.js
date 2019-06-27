@@ -113,7 +113,9 @@ const showGallery = e => {
   openCloseModal(e);
 };
 
-modalWindow.addEventListener("click", modalExit);
+if (modalWindow) {
+  modalWindow.addEventListener("click", modalExit);
+}
 // Join us click event
 if (buttons.length !== 0) {
   buttons.forEach(item => item.addEventListener("click", showHideModal));

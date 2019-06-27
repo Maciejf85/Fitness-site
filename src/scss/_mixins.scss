@@ -51,6 +51,28 @@
     }
   }
 }
+@mixin itemTitle {
+  position: relative;
+  font-weight: 600;
+  font-family: $exo;
+  font-size: 2.4rem;
+  padding-bottom: 10px;
+  font-style: italic;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    height: 2px;
+    width: 50px;
+    background: $color-primary;
+    @include mobile {
+      width: 120px;
+    }
+  }
+}
 
 @mixin mobile {
   @media (max-width: #{$mobile}) {
