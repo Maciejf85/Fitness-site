@@ -7,6 +7,7 @@
   &__container {
     display: flex;
     justify-content: space-around;
+    padding: 20px 0;
   }
   &__information {
     display: flex;
@@ -20,11 +21,12 @@
         @include itemTitle;
       }
       &__description {
-        padding: 10px 0;
+        padding: 20px 0;
         margin-right: 40px;
         font-size: 1.6rem;
         font-family: $open-sans;
         color: $color-light-grey;
+
         a {
           transition: 0.3s;
           &:hover {
@@ -42,7 +44,8 @@
   }
   &__hours {
     width: 30%;
-    padding: 30px;
+    padding-top: 30px;
+
     &__title {
       @include itemTitle;
     }
@@ -50,13 +53,31 @@
       ul {
         list-style: none;
         padding: 0;
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 1.6rem;
         font-family: $open-sans;
         color: $color-light-grey;
+        text-transform: capitalize;
         li {
           padding: 10px 0;
+
+          div {
+            display: inline-block;
+            width: 49%;
+            text-align: right;
+            color: black;
+            &:first-child {
+              text-align: left;
+              color: $color-light-grey;
+            }
+          }
         }
+      }
+      .note {
+        padding-top: 30px;
+        font-family: $open-sans;
+        color: $color-light-grey;
+        font-size: 1.6rem;
       }
     }
   }
