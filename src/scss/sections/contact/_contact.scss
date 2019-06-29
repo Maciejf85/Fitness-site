@@ -8,15 +8,38 @@
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
+    @include mobile {
+      flex-direction: column;
+      width: 100vw;
+    }
+    @include tablet {
+      flex-direction: column;
+      width: 100%;
+    }
   }
   &__information {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
+    @include mobile {
+      flex-direction: column;
+      width: 100vw;
+    }
+    @include tablet {
+      width: 100%;
+    }
 
     .item {
       width: 50%;
       padding: 30px;
+
+      @include mobile {
+        flex-direction: column;
+        width: 100vw;
+      }
+      @include tablet {
+        width: 50%;
+      }
       &__title {
         @include itemTitle;
       }
@@ -45,6 +68,15 @@
   &__hours {
     width: 30%;
     padding-top: 30px;
+    @include mobile {
+      flex-direction: column;
+      width: 90vw;
+      margin: 0 auto;
+    }
+    @include tablet {
+      padding: 30px;
+      width: 73%;
+    }
 
     &__title {
       @include itemTitle;
@@ -81,4 +113,7 @@
       }
     }
   }
+}
+.map {
+  min-height: 500px;
 }

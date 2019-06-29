@@ -190,3 +190,11 @@ const scrollToTop = () => {
 topButton.addEventListener("click", () => {
   scrollToTop();
 });
+
+let map;
+function initMap() {
+  map = new google.maps.Map(document.querySelector(".map"), {
+    center: { lat: 17.038538, lng: 51.107883 },
+    zoom: 8
+  });
+}
