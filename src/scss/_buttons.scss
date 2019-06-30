@@ -40,6 +40,10 @@ input[type="submit"] {
     top: 40px;
     right: 20px;
   }
+  @include tablet {
+    top: 40px;
+    right: 20px;
+  }
 
   &::before,
   &::after {
@@ -51,6 +55,9 @@ input[type="submit"] {
     width: 100%;
     transition: 0.3s;
     @include mobile {
+      background: hsl(0, 0%, 100%);
+    }
+    @include tablet {
       background: hsl(0, 0%, 100%);
     }
   }

@@ -74,6 +74,7 @@
     }
   }
 }
+// @mixin center
 
 @mixin mobile {
   @media (max-width: #{$mobile}) {
