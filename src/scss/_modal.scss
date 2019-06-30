@@ -14,12 +14,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 615px;
-  min-height: 345px;
+  width: 715px;
+  min-height: 445px;
   padding: 30px 0;
   background: $color-primary;
   color: white;
   font-size: 3rem;
+  &__wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
   @include mobile {
     position: fixed;
     width: 100vw;
