@@ -21,7 +21,7 @@ Automatyzacją zadań zajmował się **Gulp** skonfigurowany tak aby na bieżąc
 
 Jako continuous integration posłużył serwis **Buddy**, który został skonfigurowany do nasluchiwania zmian w repozytorium na branchu _master_. Po wykryciu zmiany _Buddy_ budował środowisko na podstawie dependencji, wykonywał minifikacje plików, kopiował nowe wersje plików na serwer a na koniec wysyłał powiadomienie na e-mail o poprawnej aktualizacji projektu.
 
-#### Struktura
+### Struktura
 
 ```
 src/
