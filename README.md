@@ -21,8 +21,8 @@ src/
 |--fontello/     // fontello files
 |–-img/          // images
 |--js/
-|  |--index.js
-|
+   |--index.js
+
 |--scss/
    |--sections/
       |--mainPage/
@@ -46,9 +46,10 @@ src/
 | |–-_modal.scss
 | |–-_variables.scss
 | |–-_main.scss
-|
-|--index.html
-|--programs.html
-|--gallery.html
-|--contact.html
+
+
+index.html
+programs.html
+gallery.html
+contact.html
 ```
