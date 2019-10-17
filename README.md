@@ -1,6 +1,6 @@
 # Fitness site
 
-[Live demo : http://maciejf.pl/fitness/](http://maciejf.pl/fitness/)
+[Live demo : https://maciejf.pl/fitness/](https://maciejf.pl/fitness/)
 
 ![responsive](http://maciejf.pl/img/fitness/responsive.jpg)
 
